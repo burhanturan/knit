@@ -1,0 +1,108 @@
+# Node - React/Next.js/Bootstrap
+node_modules/
+.next/
+/build/
+/out/
+/.pnp
+.pnp.js
+# coverage directory used by tools like istanbul
+coverage/
+# nyc test coverage
+.nyc_output
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+# Bower dependency directory (https://bower.io/)
+bower_components
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+# dependencies
+/package-lock.json
+/yarn.lock
+
+# Java - Spring Boot
+/target/
+!/target/*.war
+!/target/*.jar
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Logging Files
+*.log
+*.sql
+*.sqlite
+
+# Java Misc
+*.class
+*.hprof
+*.data
+*.dat
+*.dmp
+*.pid
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea
+*.iml
+*.iws
+/out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.springBeans
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
