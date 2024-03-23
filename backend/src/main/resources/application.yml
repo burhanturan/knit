@@ -14,7 +14,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/airbnb_v2_db
+    url: jdbc:postgresql://localhost:5432/knit_software_db
     username: db_knit
     password: db_knit_software
     driver-class-name: org.postgresql.Driver
