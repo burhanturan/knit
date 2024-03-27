@@ -2,7 +2,7 @@ info:
   application:
     name: 'knit software backend'
     description: 'This is the backend of knit software app'
-    version: '@project.version@'
+    version: '0.0.1-SNAPSHOT'
 
 server:
   port: 8081
