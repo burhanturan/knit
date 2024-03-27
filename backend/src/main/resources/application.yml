@@ -2,10 +2,10 @@ info:
   application:
     name: 'knit software backend'
     description: 'This is the backend of knit software app'
-    version: 'project.version@'
+    version: '@project.version@'
 
 server:
-  port: 8080
+  port: 8081
   error:
     include-binding-errors: always
     include-message: always
@@ -37,3 +37,31 @@ spring:
 #            starttls:
 #              enable: true
 
+#image
+servlet:
+  multipart:
+    max-file-size: 2MB
+    max-request-size: 2MB
+
+
+management:   # actuator monitorleme icin
+  endpoints:
+    enabled-by-default: true
+    jmx:
+      exposure:
+        include: "health,info,'loggers','env','beans'"
+    web:
+      exposure:
+        include: ['health','loggers','env','beans']
+  endpoint:
+    info:
+      enabled: true
+    shutdown:
+      enabled: true
+
+
+
+knit_software:
+  app:
+    jwtSecret: AppSecretKeyQAppSecretKeyQAppSecretKeyQAppSecretKeyQAppSecretKeyQAppSecretKeyQAppSecretKeyQAppSecretKeyQ
+    jwtExpirationMs: 86400000
