@@ -23,6 +23,10 @@ const styleTop = {
   marginTop: "-25px",
 };
 
+const styleEnglish = {
+  marginLeft: "350px",
+  marginTop: "15px",
+};
 
 const stylesWholeHeader = {
   backgroundColor: "#D8F0F4",
@@ -36,7 +40,6 @@ export default function Header() {
     >
       <nav className="navbar navbar-expand-lg ">
         <Link
-          // style={{ ...stylesWholeHeader }}
           className="navbar-brand"
           href="/"
         >
@@ -58,7 +61,7 @@ export default function Header() {
                 fontFamily: "Fredoka One",
               }}
             >
-              <b>software</b>
+              software
             </span>
           </div>
         </Link>
@@ -90,7 +93,10 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="ml-auto d-flex gap-2 flex-column align-items-end justify-content-end">
+          <div
+            style={{ ...styleEnglish }}
+            className="d-flex gap-3 d-lg flex-column align-items-end justify-content-end"
+          >
             <Link
               href="/"
               className="m-0 p-0 text-end text-decoration-none "

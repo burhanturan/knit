@@ -21,10 +21,7 @@ const styleSecondSection = {
 const styleButton = {
   backgroundColor: "#dde9d3",
   color: "#18474D",
-  // marginBottom: "55px",
   minWidth: "200px",
-  //marginRight: "200px",
-
   marginTop: "50px",
 };
 
@@ -120,7 +117,13 @@ export default function Home() {
         style={{ color: "#18474D" }}
       >
         <div className="shadow" style={{ maxWidth: "600px" }}>
-          <Image className="shadow" width={610} height={550} src="/homepageSecondImg.png" alt="" />
+          <Image
+            className="shadow"
+            width={610}
+            height={550}
+            src="/homepageSecondImg.png"
+            alt=""
+          />
         </div>
 
         <div style={{ maxWidth: "630px" }}>
