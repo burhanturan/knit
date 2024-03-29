@@ -19,13 +19,13 @@ jobs:
         username: bitnami
         key: ${{ secrets.SSH_KEY }}
         script: |
-          # echo "Hello, World!" > hello.txt
+          # echo "1" > hello.txt
           cd htdocs
           rm -rf test
           git clone git@github.com:knitsoftware/knitsoftware-website.git
           cd knitsoftware-website/frontend  
           npm install
           npm run build
-          mv build ../test
+          mv out ../test
           cd ..
           rm -rf  knitsoftware-website/frontend 
