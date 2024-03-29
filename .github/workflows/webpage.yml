@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Execute remote ssh commands
+      uses: appleboy/ssh-action@master
+      with:
+        # host: ${{ secrets.LIGTHSAIL_IP }}
+        host: 3.96.175.38
+        # username: ${{ secrets.LIGTHSAIL_USERNAME }}
+        username: bitnami
+        key: ${{ secrets.SSH_KEY }}
+        script: |
+          # echo "Hello, World!" > hello.txt
+          cd htdocs
+          rm -rf test
+          git clone git@github.com:knitsoftware/knitsoftware-website.git
+          cd knitsoftware-website/frontend  
+          npm install
+          npm run build
+          mv build ../test
+          cd ..
+          rm -rf  knitsoftware-website/frontend 
