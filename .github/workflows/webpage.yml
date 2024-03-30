@@ -28,4 +28,5 @@ jobs:
           npm run build
           mv out ../../test
           cd ..
+          cd ..
           rm -rf  knitsoftware-website 
