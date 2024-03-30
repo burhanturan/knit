@@ -25,7 +25,7 @@ jobs:
           git clone git@github.com:knitsoftware/knitsoftware-website.git
           cd knitsoftware-website/frontend  
           npm install
-          nmp run build
-          mv out ../test
+          npm run build
+          mv out ../../test
           cd ..
           rm -rf  knitsoftware-website/frontend 
