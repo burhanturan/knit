@@ -14,19 +14,20 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         # host: ${{ secrets.LIGTHSAIL_IP }}
-        host: 3.96.175.38
+        host: 35.183.105.232
         # username: ${{ secrets.LIGTHSAIL_USERNAME }}
         username: bitnami
         key: ${{ secrets.SSH_KEY }}
         script: |
           # echo "1" > hello.txt
-          cd htdocs
+           cd htdocs/knitsoftware.com
           rm -rf test
           git clone git@github.com:knitsoftware/knitsoftware-website.git
           cd knitsoftware-website/frontend  
           npm install
-          npm run build
-          mv out ../../test
+          # npm run build
+          npm  start
+          # mv out ../../test
           cd ..
           cd ..
           rm -rf  knitsoftware-website 
