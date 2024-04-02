@@ -28,6 +28,6 @@ jobs:
           # npm run build
           npm  start
           # mv out ../../test
-          cd ..
-          cd ..
-          rm -rf  knitsoftware-website 
+          # cd ..
+          # cd ..
+          # rm -rf  knitsoftware-website 
