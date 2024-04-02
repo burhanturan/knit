@@ -26,7 +26,7 @@ jobs:
           cd knitsoftware-website/frontend  
           npm install
           npm run build
-          npm  start
+          mv public ../../test/
           mv out ../../test
            cd ..
            cd ..
