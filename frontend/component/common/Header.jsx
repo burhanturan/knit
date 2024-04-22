@@ -1,45 +1,31 @@
 import Link from "next/link";
-import React from "react";
-
-const styleButton = {
-  backgroundColor: "#18474D",
-  color: "#DDE9D3",
-  marginBottom: "55px",
-  minWidth: "200px",
-};
 
 const styleHeader = {
   color: "#18474D",
   fontSize: "60px",
-  fontFamily: "Arial",
-  marginBottom: "-25px",
+  fontFamily: "Fredoka One",
+  marginBottom: "0px",
 };
 
-const styleTop = {
-  color: "#18474D",
-  fontSize: "15px",
-  fontFamily: "Fredoka One",
-  marginBottom: "-90px",
-  marginTop: "-25px",
+const styleButton = {
+  backgroundColor: "#18474D",
+  color: "#DDE9D3",
+  marginBottom: "45px",
+  minWidth: "200px",
 };
 
 const styleEnglish = {
-  marginLeft: "350px",
-  marginTop: "15px",
-};
-
-const stylesWholeHeader = {
-  backgroundColor: "#D8F0F4",
+float: "right",
+margin: "10px",
 };
 
 export default function Header() {
   return (
-    <div
-      className="sticky-top container justify-content-between align-items-center "
-      style={{ ...stylesWholeHeader }}
-    >
-      <nav className="navbar navbar-expand-lg ">
-        <Link
+
+    <header style={{ height: "150px" }} id="header" className=" container fixed-top position-sticky">
+    <div  className=" d-flex align-items-center justify-content-between">
+      <h1 className="logo">        <Link
+          // style={{ ...stylesWholeHeader }}
           className="navbar-brand"
           href="/"
         >
@@ -57,59 +43,30 @@ export default function Header() {
               style={{
                 color: "#18474D",
                 fontSize: "19px",
-                marginTop: "-10",
+                marginTop: "10",
                 fontFamily: "Fredoka One",
               }}
             >
-              software
+              <b>software</b>
             </span>
           </div>
-        </Link>
-        <div
-          style={{ color: "#18474D", ...styleTop }}
-          className="collapse navbar-collapse d-flex justify-content-around "
-        >
-          <div className="navbar-nav gap-5">
-            <Link
-              className="nav-item nav-link active"
-              href="/"
-              style={{ color: "#18474D" }}
-            >
-              YOUR CHALLENGES
-            </Link>
-            <Link
-              className="nav-item nav-link"
-              href="/"
-              style={{ color: "#18474D" }}
-            >
-              WHAT WE DO
-            </Link>
-            <Link
-              className="nav-item nav-link"
-              href="/"
-              style={{ color: "#18474D" }}
-            >
-              OUR APPROACH
-            </Link>
-          </div>
+        </Link></h1>
 
-          <div
-            style={{ ...styleEnglish }}
-            className="d-flex gap-3 d-lg flex-column align-items-end justify-content-end"
-          >
-            <Link
-              href="/"
-              className="m-0 p-0 text-end text-decoration-none "
-              style={{ color: "#18474D" }}
-            >
-              English
-            </Link>
-            <button className="btn rounded-0" style={{ ...styleButton }}>
-              LET&apos;S TALK
-            </button>
+      <nav id="navbar" className="navbar">
+        <ul>
+          <li><a className="nav-link " href="/yourchallenges">YOUR CHALLENGES</a></li>
+          <li><a className="nav-link scrollto" href="/whatwedo">WHAT WE DO</a></li>
+          <li><a className="nav-link scrollto" href="/ourapproach">OUR APPROACH</a></li>
+          <div className="row d-flex gap-2 flex-column" style={{ marginTop: "-40px"}}>
+          <li><a className="scrollto justify-content-center" style={{...styleEnglish}} href="#about">English</a></li>
+          <li><a className="getstarted justify-content-center scrollto rounded-0" style={{...styleButton}} href="#about">LET'S TALK</a></li>
           </div>
-        </div>
+        </ul>
+        <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
+
     </div>
+  </header>
+
   );
 }
