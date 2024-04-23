@@ -157,7 +157,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4>MAKE YOUR BUSINESS FUTURE-READY</h4>
+              <h4>MAKE YOUR BUSINESS FUTURE-READY!</h4>
               <h1>Digitize to Thrive</h1>
               <h5>
                 Join Us in Weaving a Future Where Technology Unites Us All
