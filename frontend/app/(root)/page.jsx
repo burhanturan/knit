@@ -68,7 +68,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4>CONNECTING COMMUNITIES, BUILDING DREAMS</h4>
+              <h4>CONNECTING COMMUNITIES, BUILDING DREAMS!</h4>
               <h1>Let&apos;s Knit the Future!</h1>
               <h5>
                 Join Us in Weaving a Future Where Technology Unites Us All
