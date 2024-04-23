@@ -74,7 +74,7 @@ export default function Home() {
               <h5 className="fw-bold">Unleashing Potential, Together</h5>
               <p>
                 At Knit Software, our approach is what sets us apart --
-                it&apos;s our 'secret sauce.' We blend industry best practices
+                it&apos;s our &apos;secret sauce.&apos; We blend industry best practices
                 with a unique flavor of collaboration to deliver impactful
                 solutions swiftly and efficiently. Our secret lies in our
                 commitment to a user-centric methodology and the agile scrum

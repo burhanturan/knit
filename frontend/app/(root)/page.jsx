@@ -163,14 +163,14 @@ export default function Home() {
                 Join Us in Weaving a Future Where Technology Unites Us All
               </h5>
               <p>
-                In today's rapidly evolving digital landscape, the importance of
+                In today&apos;s rapidly evolving digital landscape, the importance of
                 embracing technology cannot be overstated. A single digital
                 product holds the potential not just to innovate but to redefine
                 industry standards, making digital integration no longer
                 optional but essential for survival and success. For companies
                 looking to navigate this shift, Knit Software emerges as a
                 critical ally. We understand that investing in IT is not just
-                about adopting new technologies; it's about strategically
+                about adopting new technologies; it&apos;s about strategically
                 integrating digital solutions that resonate with your core
                 business values and objectives. At Knit Software, we specialize
                 in crafting bespoke digital products that not only meet the

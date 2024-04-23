@@ -59,7 +59,7 @@ export default function Header() {
           <li><a className="nav-link scrollto" href="/ourapproach">OUR APPROACH</a></li>
           <div className="row d-flex gap-2 flex-column" style={{ marginTop: "-40px"}}>
           <li><a className="scrollto justify-content-center" style={{...styleEnglish}} href="#about">English</a></li>
-          <li><a className="getstarted justify-content-center scrollto rounded-0" style={{...styleButton}} href="#about">LET'S TALK</a></li>
+          <li><a className="getstarted justify-content-center scrollto rounded-0" style={{...styleButton}} href="#about">LET&apos;S TALK</a></li>
           </div>
         </ul>
         <i className="bi bi-list mobile-nav-toggle"></i>

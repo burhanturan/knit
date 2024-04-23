@@ -155,12 +155,12 @@ export default function Home() {
             >
             <h1 style={style2}>Our Mission</h1>
           <h4 className="fw-bold" style={{ fontSize: "20px" }}>
-            "To weave a digital future where every connection counts"
+          &quot;To weave a digital future where every connection counts&quot;
           </h4>
           <p style={{ fontSize: "18px" }}>
             In a world brimming with potential, our mission is to empower every
             individual and business with cutting-edge web solutions. From
-            fostering collaboration to driving discovery, we're here to help
+            fostering collaboration to driving discovery, we&apos;re here to help
             communities innovate and thrive.
           </p>
           <h1 style={{ ...style2, marginTop: "45px" }}>Our Products</h1>
