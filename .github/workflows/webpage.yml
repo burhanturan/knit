@@ -14,7 +14,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         # host: ${{ secrets.LIGTHSAIL_IP }}
-        host: 35.183.105.232
+        host: 35.183.250.222
         # username: ${{ secrets.LIGTHSAIL_USERNAME }}
         username: bitnami
         key: ${{ secrets.SSH_KEY }}
