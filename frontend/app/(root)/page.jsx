@@ -31,6 +31,12 @@ const styleButton = {
   marginTop: "50px",
 };
 
+const styleh1 = {
+  fontSize: "16px"
+};
+
+
+
 export default function Home() {
   return (
     <main
@@ -68,11 +74,9 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4>CONNECTING COMMUNITIES, BUILDING DREAMS!</h4>
-              <h1>Let&apos;s Knit the Future!</h1>
-              <h5>
-                Join Us in Weaving a Future Where Technology Unites Us All
-              </h5>
+              <h4 className="fw-bold" style={styleh1}>CONNECTING COMMUNITIES, BUILDING DREAMS</h4>
+              <h1 className="fw-bold mb-4" style={{ fontSize: '44px' }}>Let's Knit the Future!</h1>
+              <p className="fw-bold" style={{ fontSize: '16.5px' }}>Join Us in Weaving a Future Where Technology Unites Us All</p>
               <p>
                 At Knit Software, we&apos;re more than just a tech company;
                 we&apos;re a community builder. With every line of code, we
@@ -157,9 +161,9 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4>MAKE YOUR BUSINESS FUTURE-READY!</h4>
-              <h1>Digitize to Thrive</h1>
-              <h5>
+              <h4 className="fw-bold" style={{ fontSize: '17.5px' }}>MAKE YOUR BUSINESS FUTURE-READY</h4>
+              <h1 className="fw-bold mb-4" style={{fontSize: '46px'}}>Digitize to Thrive</h1>
+              <h5 className="fw-bold mb-4" style={{fontSize: "17px"}}>
                 Join Us in Weaving a Future Where Technology Unites Us All
               </h5>
               <p>
