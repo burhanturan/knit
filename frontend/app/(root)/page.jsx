@@ -189,7 +189,7 @@ export default function Home() {
                   marginTop: "60px",
                 }}
               >
-                OUR SOLUTION
+                OUR SOLUTIONS
               </Link>
             </div>
           </div>
