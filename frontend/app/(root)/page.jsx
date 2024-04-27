@@ -24,11 +24,7 @@ const styleSecondSection = {
 const styleButton = {
   backgroundColor: "#dde9d3",
   color: "#18474D",
-  // marginBottom: "55px",
   minWidth: "200px",
-  //marginRight: "200px",
-
-  marginTop: "50px",
 };
 
 const styleh1 = {
@@ -98,7 +94,7 @@ export default function Home() {
                 possibilities, one digital thread at a time.
               </p>
               <Link
-                href="/"
+                href="/letstalk"
                 className="btn rounded-0"
                 style={{
                   backgroundColor: "#18474D",
@@ -123,19 +119,22 @@ export default function Home() {
           <div className="text-center">
             <div>
               <p style={{ ...styleSecondSection }}>
-                Software means investing smartly in technology that drives real,
-                impactful changes.
+                Software means investing smartly in technology 
+                <br />
+                that drives real, impactful changes.
               </p>
             </div>
 
             <div>
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
-              >
-                Learn more about what we do
-              </button>
-            </div>
+  <a href="/whatwedo">
+    <button
+      style={{ ...styleButton }}
+      className="btn rounded-0 cta-btn"
+    >
+      Learn more about what we do
+    </button>
+  </a>
+</div>
           </div>
         </div>
       </section>
@@ -181,10 +180,10 @@ export default function Home() {
                 immediate needs of your business but also lay a robust
                 foundation for future innovation. In a time when digital
                 transformation can dictate the performance and longevity of your
-                organization, partnering with Knit objectives.
+                organization, partnering with Knit&apos;s objectives.
               </p>
               <Link
-                href="/"
+                href="/whatwedo"
                 className="btn rounded-0"
                 style={{
                   backgroundColor: "#18474D",
@@ -193,7 +192,7 @@ export default function Home() {
                   marginTop: "60px",
                 }}
               >
-                OUR SOLUTION
+                OUR SOLUTIONS
               </Link>
             </div>
           </div>
