@@ -71,7 +71,7 @@ export default function Home() {
               data-aos="fade-right"
             >
               <h4 className="fw-bold" style={styleh1}>CONNECTING COMMUNITIES, BUILDING DREAMS</h4>
-              <h1 className="fw-bold mb-4" style={{ fontSize: '44px' }}>Let's Knit the Future!</h1>
+              <h1 className="fw-bold mb-4" style={{ fontSize: '44px' }}>Let&apos;s Knit the Future!</h1>
               <p className="fw-bold" style={{ fontSize: '16.5px' }}>Join Us in Weaving a Future Where Technology Unites Us All</p>
               <p>
                 At Knit Software, we&apos;re more than just a tech company;
