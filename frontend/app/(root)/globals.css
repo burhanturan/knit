@@ -185,6 +185,10 @@ h6 {
   padding: 10px 0 10px 24px;
 }
 
+.navbar>ul>li>a {
+  font-weight: bold;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
