@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Fredoka } from "next/font/google";
 
-const fredoka = Fredoka({ subsets: ["latin"] });
+const fredoka = Fredoka({ weight: "500", subsets: ["latin"] });
 
 const styleKnit = {
   color: "#18474D",

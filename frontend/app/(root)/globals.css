@@ -35,9 +35,6 @@ a:hover {
   text-decoration: none;
 }
 
-
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -105,7 +102,7 @@ a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-} */
+}
 
  .footer .footer-links ul i {
   padding-right: 2px;
@@ -115,7 +112,7 @@ a:hover {
 }
 
 .footer .footer-links ul li {
-  padding: 10
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -209,20 +206,6 @@ a:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* .navbar a:hover:before,
-.navbar li:hover>a:before,
-.navbar .active:before {
-  visibility: visible;
-  width: 100%;
-} */
-
-/* .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #000000;
-} */
-
 .navbar .getstarted,
 .navbar .getstarted:focus {
   padding: 8px 25px;
@@ -234,18 +217,6 @@ a:hover {
   font-weight: 600;
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
-
-/**
-* Mobile Navigation 
-*/
-/* .mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-} */
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
@@ -268,12 +239,6 @@ a:hover {
   transition: 0.3s;
   z-index: 999;
 }
-
-/* .navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-} */
 
 .navbar-mobile ul {
   display: block;
@@ -349,8 +314,6 @@ a:hover {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
-
 
 /*--------------------------------------------------------------
 # About
