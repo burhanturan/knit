@@ -14,7 +14,7 @@ const styleSecondSection = {
   fontFamily: "Arial",
   display: "inline-flex",
   //height: "50px",
-  width: "600px",
+  width: "%100",
   justifyContent: "center",
   //marginTop: "-100px",
   fontSize: "20px",

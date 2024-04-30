@@ -6,11 +6,11 @@ import Header from "@/component/common/Header";
 
 
 const styleSecondSection = {
-  color: "#D8F0F4",
+  color: "#DDE9D3",
   fontFamily: "Arial",
   display: "inline-flex",
-  // height: "175px",
-  width: "600px",
+  //height: "50px",
+  width: "%100",
   justifyContent: "center",
   //marginTop: "-100px",
   fontSize: "20px",
