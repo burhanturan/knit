@@ -3,7 +3,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";git 
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const metadata = {
   title: "Knit Software",
