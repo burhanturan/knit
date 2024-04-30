@@ -4,6 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "@/component/common/Footer1";
 
 export const metadata = {
   title: "Knit Software",
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className} style={{ marginTop: "-100px" }}>
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
