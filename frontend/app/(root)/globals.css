@@ -41,26 +41,20 @@ a:hover {
 
 .footer {
   font-size: 14px;
-  padding: 50px 0;
+  padding: 20px 0;
   color: white;
 }
 
-.footer .footer-info .logo {
+/* .footer .footer-info .logo {
   line-height: 0;
   margin-bottom: 25px;
-}
-
-.footer .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
+} */
 
 .footer .footer-info .logo span {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1px;
   color: #fff;
-  
 }
 
 .footer .footer-info p {
@@ -71,11 +65,11 @@ a:hover {
 .footer .social-links a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10% ;
+  border: 3px solid rgb(255, 255, 255);
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   margin-right: 10px;
@@ -87,15 +81,15 @@ a:hover {
   border-color: #fff;
 }
 
-.footer h4 {
+/* .footer h4 {
   font-size: 16px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
-}
+} */
 
 .footer .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .footer .footer-links ul {
@@ -104,12 +98,6 @@ a:hover {
   margin: 0;
 }
 
- .footer .footer-links ul i {
-  padding-right: 2px;
-  color: rgba(13, 66, 255, 0.8);
-  font-size: 12px;
-  line-height: 0;
-}
 
 .footer .footer-links ul li {
   padding: 10px;
@@ -124,12 +112,6 @@ a:hover {
   padding: 20px 0;
 }
 
-#header.header-scrolled,
-#header.header-inner-pages {
-  background: rgba(24, 6, 185, 0.8);
-  padding: 12px 0;
-}
-
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -139,20 +121,15 @@ a:hover {
   letter-spacing: 1px;
 }
 
-
-#header .logo img {
-  max-height: 40px;
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
 */
-.navbar {
+/* .navbar {
   padding: 0;
-}
+} */
 
 .navbar ul {
   margin: 0;
@@ -160,6 +137,7 @@ a:hover {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar li {
@@ -186,14 +164,14 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar a i,
+/* .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
-}
+} */
 
-.navbar>ul>li>a:before {
+/* .navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -204,21 +182,18 @@ a:hover {
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
-}
+} */
 
-.navbar .getstarted,
+/* .navbar .getstarted,
 .navbar .getstarted:focus {
   padding: 8px 25px;
   margin-left: 30px;
-  border-radius: 5px;
-  color: #000000;
   transition: 0.3s;
-  font-size: 14px;
-  font-weight: 600;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
+  font-size: 13px;
 
-@media (max-width: 991px) {
+} */
+
+/* @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -226,9 +201,9 @@ a:hover {
   .navbar ul {
     display: none;
   }
-}
+} */
 
-.navbar-mobile {
+/* .navbar-mobile {
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -238,9 +213,9 @@ a:hover {
   background: rgba(28, 47, 65, 0.9);
   transition: 0.3s;
   z-index: 999;
-}
+} */
 
-.navbar-mobile ul {
+/* .navbar-mobile ul {
   display: block;
   position: absolute;
   top: 55px;
@@ -279,41 +254,10 @@ a:hover {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-}
+} */
 
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
 
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #5846f9;
-}
-
-.navbar-mobile .dropdown>.dropdown-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
 # About
@@ -396,3 +340,4 @@ a:hover {
   padding: 5px 25px;
   border-radius: 25px;
 }
+
