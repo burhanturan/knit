@@ -130,7 +130,7 @@ export default function Footer() {
                     <FaFacebook />
                   </Link>
                   <Link href="/" className="text-white">
-                    <FaTwitter />
+                    <TbSquareLetterX />
                   </Link>
                   <Link href="/" className="text-white">
                     <FaLinkedinIn />
