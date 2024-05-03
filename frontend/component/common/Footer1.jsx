@@ -1,4 +1,4 @@
-import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -127,16 +127,16 @@ export default function Footer() {
                   style={{ marginTop: "15px" }}
                 >
                   <Link href="/" className="text-white">
-                    <TbSquareLetterX />
+                    <FaFacebook />
                   </Link>
                   <Link href="/" className="text-white">
-                    <TbSquareLetterX />
+                    <FaTwitter />
                   </Link>
                   <Link href="/" className="text-white">
-                    <TbSquareLetterX />
+                    <FaLinkedinIn />
                   </Link>
                   <Link href="/" className="text-white">
-                    <TbSquareLetterX />
+                    <FaYoutube />
                   </Link>
 
                   {/* <FaTwitter />
@@ -147,6 +147,7 @@ export default function Footer() {
                 <p className="d-flex justify-content-center align-items-center">
                   Socials
                 </p>
+              
                 <div
                   className=" d-flex justify-content-center align-items-center"
                   style={{ marginTop: "15px" }}
