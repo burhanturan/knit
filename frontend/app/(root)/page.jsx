@@ -1,34 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "react-bootstrap";
 import Header from "@/component/common/Header";
-
-const styleFirstSection = {
-  backgroundColor: "#18474D",
-  height: "200px",
-};
 
 const styleSecondSection = {
   color: "#DDE9D3",
   fontFamily: "Arial",
   display: "inline-flex",
-  //height: "50px",
-  width: "600px",
+  width: "90%",
   justifyContent: "center",
-  //marginTop: "-100px",
   fontSize: "20px",
-  //marginLeft: "330px",
 };
 
 const styleButton = {
   backgroundColor: "#dde9d3",
   color: "#18474D",
-  // marginBottom: "55px",
   minWidth: "200px",
-  //marginRight: "200px",
+};
 
-  marginTop: "50px",
+const styleh1 = {
+  fontSize: "16px",
 };
 
 export default function Home() {
@@ -68,11 +59,15 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4>CONNECTING COMMUNITIES, BUILDING DREAMS!</h4>
-              <h1>Let&apos;s Knit the Future!</h1>
-              <h5>
+              <h4 className="fw-bold" style={styleh1}>
+                CONNECTING COMMUNITIES, BUILDING DREAMS
+              </h4>
+              <h1 className="fw-bold mb-4" style={{ fontSize: "44px" }}>
+                Let&apos;s Knit the Future!
+              </h1>
+              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
                 Join Us in Weaving a Future Where Technology Unites Us All
-              </h5>
+              </p>
               <p>
                 At Knit Software, we&apos;re more than just a tech company;
                 we&apos;re a community builder. With every line of code, we
@@ -94,7 +89,7 @@ export default function Home() {
                 possibilities, one digital thread at a time.
               </p>
               <Link
-                href="/"
+                href="/letstalk"
                 className="btn rounded-0"
                 style={{
                   backgroundColor: "#18474D",
@@ -119,18 +114,21 @@ export default function Home() {
           <div className="text-center">
             <div>
               <p style={{ ...styleSecondSection }}>
-                Software means investing smartly in technology that drives real,
-                impactful changes.
+                Software means investing smartly in technology
+                <br />
+                that drives real, impactful changes.
               </p>
             </div>
 
             <div>
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
-              >
-                Learn more about what we do
-              </button>
+              <a href="/whatwedo">
+                <button
+                  style={{ ...styleButton }}
+                  className="btn rounded-0 cta-btn"
+                >
+                  Learn more about what we do
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -157,30 +155,34 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4>MAKE YOUR BUSINESS FUTURE-READY!</h4>
-              <h1>Digitize to Thrive</h1>
-              <h5>
+              <h4 className="fw-bold" style={{ fontSize: "17.5px" }}>
+                MAKE YOUR BUSINESS FUTURE-READY
+              </h4>
+              <h1 className="fw-bold mb-4" style={{ fontSize: "46px" }}>
+                Digitize to Thrive
+              </h1>
+              <h5 className="fw-bold mb-4" style={{ fontSize: "17px" }}>
                 Join Us in Weaving a Future Where Technology Unites Us All
               </h5>
               <p>
-                In today&apos;s rapidly evolving digital landscape, the importance of
-                embracing technology cannot be overstated. A single digital
-                product holds the potential not just to innovate but to redefine
-                industry standards, making digital integration no longer
-                optional but essential for survival and success. For companies
-                looking to navigate this shift, Knit Software emerges as a
-                critical ally. We understand that investing in IT is not just
-                about adopting new technologies; it&apos;s about strategically
-                integrating digital solutions that resonate with your core
-                business values and objectives. At Knit Software, we specialize
-                in crafting bespoke digital products that not only meet the
-                immediate needs of your business but also lay a robust
+                In today&apos;s rapidly evolving digital landscape, the
+                importance of embracing technology cannot be overstated. A
+                single digital product holds the potential not just to innovate
+                but to redefine industry standards, making digital integration
+                no longer optional but essential for survival and success. For
+                companies looking to navigate this shift, Knit Software emerges
+                as a critical ally. We understand that investing in IT is not
+                just about adopting new technologies; it&apos;s about
+                strategically integrating digital solutions that resonate with
+                your core business values and objectives. At Knit Software, we
+                specialize in crafting bespoke digital products that not only
+                meet the immediate needs of your business but also lay a robust
                 foundation for future innovation. In a time when digital
                 transformation can dictate the performance and longevity of your
-                organization, partnering with Knit objectives.
+                organization, partnering with Knit&apos;s objectives.
               </p>
               <Link
-                href="/"
+                href="/whatwedo"
                 className="btn rounded-0"
                 style={{
                   backgroundColor: "#18474D",

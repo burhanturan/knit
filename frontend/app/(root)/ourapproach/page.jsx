@@ -1,34 +1,27 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from "react-bootstrap"
-import Header from "@/component/common/Header"
+import Header from "@/component/common/Header";
 
 const styleSecondSection = {
   color: "#DDE9D3",
   fontFamily: "Arial",
   display: "inline-flex",
-  //height: "50px",
-  width: "600px",
+  width: "90%",
   justifyContent: "center",
-  //marginTop: "-100px",
   fontSize: "20px",
-  //marginLeft: "330px",
-}
+};
 
 const styleButton = {
   backgroundColor: "#dde9d3",
   color: "#18474D",
-  // marginBottom: "55px",
   minWidth: "200px",
-  //marginRight: "200px",
-
   marginTop: "50px",
-}
+};
 
 const style1 = {
   fontSize: "18px",
-}
+};
 
 export default function Home() {
   return (
@@ -74,10 +67,10 @@ export default function Home() {
               <h5 className="fw-bold">Unleashing Potential, Together</h5>
               <p>
                 At Knit Software, our approach is what sets us apart --
-                it&apos;s our &apos;secret sauce.&apos; We blend industry best practices
-                with a unique flavor of collaboration to deliver impactful
-                solutions swiftly and efficiently. Our secret lies in our
-                commitment to a user-centric methodology and the agile scrum
+                it&apos;s our &apos;secret sauce.&apos; We blend industry best
+                practices with a unique flavor of collaboration to deliver
+                impactful solutions swiftly and efficiently. Our secret lies in
+                our commitment to a user-centric methodology and the agile scrum
                 framework, ensuring that every project is a tight-knit endeavor
                 for success.
               </p>
@@ -189,5 +182,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
