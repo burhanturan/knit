@@ -93,21 +93,21 @@ export default function Header() {
           >
             <ul className="navbar-nav mx-auto">
               <li>
-                <a className="nav-link px-5" href="/yourchallenges">
+                <a className="nav-link px-4" href="/yourchallenges">
                   YOUR CHALLENGES
                 </a>
               </li>
               <li>
-                <a className="nav-link px-5" href="/whatwedo">
+                <a className="nav-link px-4" href="/whatwedo">
                   WHAT WE DO
                 </a>
               </li>
               <li>
-                <a className="nav-link px-5" href="/ourapproach">
+                <a className="nav-link px-4" href="/ourapproach">
                   OUR APPROACH
                 </a>
               </li>
-              <li className="nav-item px-5">
+              {/* <li className="nav-item ">
                 <section className="navbar-end row d-flex gap-2 flex-column" style={{marginTop: "0px"}}>
                   <a
                     className="nav-link justify-content-end hidden-sm-down"
@@ -124,8 +124,15 @@ export default function Header() {
                     LET&apos;S TALK
                   </a>
                 </section>
-              </li>
+              </li> */}
             </ul>
+            <a
+                    className="nav-link getstarted justify-content-center rounded-0"
+                    style={{ ...styleButton }}
+                    href="/letstalk"
+                  >
+                    LET&apos;S TALK
+                  </a>
           </div>
         </div>
       </nav>
