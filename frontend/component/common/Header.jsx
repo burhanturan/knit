@@ -119,7 +119,7 @@ export default function Header() {
                   <a
                     className="nav-link getstarted justify-content-center rounded-0"
                     style={{ ...styleButton }}
-                    href="#"
+                    href="/letstalk"
                   >
                     LET&apos;S TALK
                   </a>
