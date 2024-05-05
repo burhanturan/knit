@@ -40,7 +40,7 @@ export default function Footer() {
         <section className="" style={{ marginTop: "-50px" }}>
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <div className="col-md-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold ">
                   <Link href="/" className="text-white text-decoration-none">
                     KNIT SOFTWARE
@@ -74,7 +74,7 @@ export default function Footer() {
               </div>
 
               <div
-                className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"
+                className="col-md-3 mx-auto mb-4"
                 style={{ paddingLeft: "-45px" }}
               >
                 <h6 className=" fw-bold">Usefull Links</h6>
@@ -95,8 +95,11 @@ export default function Footer() {
                   </a>
                 </p>
               </div>
+
+              <div className="col-md-3 mx-auto mb-4" ></div>
+
               <div
-                className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                className="col-md-3 mx-auto mb-md-0 mb-4"
                 style={{ marginTop: "-15px" }}
               >
                 <h1 className="logo">
