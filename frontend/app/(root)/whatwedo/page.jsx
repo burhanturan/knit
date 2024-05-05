@@ -70,30 +70,27 @@ export default function Home() {
                 communities drives us forward. Here&apos;s a glimpse into our
                 core:
               </p>
-              <h6 className="fw-bold">OUR VALUES</h6>
+              <br></br>
+              <h2>OUR VALUES</h2>
               <p>
-                <strong>Integrity</strong>
+                <span className="fw-bold" style={{ fontSize: "20px" }}>Integrity</span>
                 <br></br>
-                We believe in the power of honesty, building trust with every
-                click.
+                We believe in the power of honesty, building trust with every click.
               </p>
               <p>
-                <strong>Community</strong>
+                <span className="fw-bold" style={{ fontSize: "20px" }}>Community</span>
                 <br></br>
-                Our heart lies in creating strong bonds, knitting together
-                diverse groups for a unified purpose.
+                Our heart lies in creating strong bonds, knitting together diverse groups for a unified purpose.
               </p>
               <p>
-                <strong>Scrappiness</strong>
+                <span className="fw-bold" style={{ fontSize: "20px" }}>Scrappiness</span>
                 <br></br>
-                Innovation through agility; we&apos;re not agraid to tread new
-                paths to find solutions.
+                Innovation through agility; we&apos;re not agraid to tread new paths to find solutions.
               </p>
               <p>
-                <strong>Ease</strong>
+                <span className="fw-bold" style={{ fontSize: "20px" }}>Ease</span>
                 <br></br>
-                Making technology accessible and manageable, we simplify the
-                complex, ensuring a seamless experience for all.
+                Making technology accessible and manageable, we simplify the complex, ensuring a seamless experience for all.
               </p>
             </div>
           </div>
@@ -146,7 +143,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h1 style={style2}>Our Mission</h1>
+              <h2>Our Mission</h2>
               <h4 className="fw-bold" style={{ fontSize: "20px" }}>
                 &quot;To weave a digital future where every connection
                 counts&quot;
@@ -157,7 +154,8 @@ export default function Home() {
                 From fostering collaboration to driving discovery, we&apos;re
                 here to help communities innovate and thrive.
               </p>
-              <h1 style={{ ...style2, marginTop: "45px" }}>Our Products</h1>
+              <br></br>
+              <h2>Our Products</h2>
               <p style={{ fontSize: "18px" }}>
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
