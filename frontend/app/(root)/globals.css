@@ -239,10 +239,11 @@ a:hover {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #3fbbc0;
+  /* position: relative;
+  left: 10px; */
+  padding: 30px;
+  background: #18474D;
   color: #fff;
-  background-size: cover;
-  padding: 30px 0;
 }
 
 .cta h3 {

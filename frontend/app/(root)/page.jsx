@@ -107,8 +107,7 @@ export default function Home() {
 
       <section
         id="cta"
-        className="container cta w-100"
-        style={{ backgroundColor: "#18474D" }}
+        className="container cta"
       >
         <div data-aos="zoom-in">
           <div className="text-center">
