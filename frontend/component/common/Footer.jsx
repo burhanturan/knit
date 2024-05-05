@@ -144,7 +144,7 @@ export default function Footer() {
                   style={{ marginTop: "15px" }}
                 >
                   <Link
-                    href="/"
+                    href="/letstalk"
                     className="btn rounded-0"
                     style={{
                       backgroundColor: "#18474D",
