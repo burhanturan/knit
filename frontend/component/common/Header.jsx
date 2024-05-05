@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 import { Fredoka } from "next/font/google";
+import { TbLetterSpacing } from "react-icons/tb";
 
 const fredoka = Fredoka({ weight: "500", subsets: ["latin"] });
 
@@ -18,8 +19,9 @@ const styleKnit = {
 
 const styleSoftware = {
   color: "#18474D",
-  fontSize: "19px",
   marginTop: "10",
+  fontSize: "20px",
+  letterSpacing: "5px"
 };
 
 const styleButton = {
