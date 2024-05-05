@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 //Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "@/component/common/Footer1";
+import Footer from "@/component/common/Footer";
 
 export const metadata = {
   title: "Knit Software",
