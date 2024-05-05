@@ -41,11 +41,6 @@ export default function Footer() {
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-3 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold ">
-                  <Link href="/" className="text-white text-decoration-none">
-                    KNIT SOFTWARE
-                  </Link>
-                </h6>
                 <p>
                   <a href="/whatwedo" className="text-white text-decoration-none">
                     About Us
@@ -63,11 +58,6 @@ export default function Footer() {
                 </p>
                 <p>
                   <a href="/letstalk" className="text-white text-decoration-none">
-                    Contact
-                  </a>
-                </p>
-                <p>
-                  <a href="/letstalk" className="text-white text-decoration-none">
                     Careers
                   </a>
                 </p>
@@ -77,8 +67,6 @@ export default function Footer() {
                 className="col-md-3 mx-auto mb-4"
                 style={{ paddingLeft: "-45px" }}
               >
-                <h6 className=" fw-bold">Usefull Links</h6>
-
                 <p>
                   <a href="#" className="text-white text-decoration-none">
                     Terms of Service
