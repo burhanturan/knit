@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import Header from "@/component/common/Header";
 
-const styleSecondSection = {
-  color: "#DDE9D3",
+const styleBanner = {
+  color: "#D8F0F4",
   fontFamily: "Arial",
   display: "inline-flex",
   width: "90%",
@@ -13,17 +12,23 @@ const styleSecondSection = {
 };
 
 const styleButton = {
-  backgroundColor: "#dde9d3",
+  backgroundColor: "#D8F0F4",
   color: "#18474D",
-  minWidth: "200px",
-  marginTop: "50px",
+  minWidth: "260px",
 };
 
 const style2 = {
-  fontSize: "60px",
+  fontSize: "medium",
+  fontWeight: "bold",
 };
 
-export default function Home() {
+const style3 = {
+  fontSize: "290%",
+  fontWeight: "bold",
+  marginBottom: "20px",
+};
+
+export default function WhatWeDo() {
   return (
     <main
       className=""
@@ -31,6 +36,7 @@ export default function Home() {
         fontFamily: "Arial",
         backgroundColor: "#EEE8E8",
         marginBottom: "0px",
+        color: "#18474D"
       }}
     >
       <div
@@ -60,9 +66,9 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
-              <h1>What we do at Knit Software</h1>
-              <h5>We are all about making an impact</h5>
+              <h4 style={style2}>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
+              <h1 className="fw-bold mb-3">What we do at Knit Software</h1>
+              <h5 className="fw-bold mb-4">We are all about making an impact</h5>
               <p>
                 At Knit Software, we&apos;re more than just a technology
                 company; we&apos;re a catalyst for positive change. Our
@@ -70,25 +76,24 @@ export default function Home() {
                 communities drives us forward. Here&apos;s a glimpse into our
                 core:
               </p>
-              <br></br>
-              <h2>OUR VALUES</h2>
+              <h6 className="fw-bold mb-3">OUR VALUES</h6>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Integrity</span>
+              <span className="fw-bold" style={{ fontSize: "18px" }}>Integrity</span>
                 <br></br>
                 We believe in the power of honesty, building trust with every click.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Community</span>
+                <span className="fw-bold" style={{ fontSize: "18px" }}>Community</span>
                 <br></br>
                 Our heart lies in creating strong bonds, knitting together diverse groups for a unified purpose.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Scrappiness</span>
+                <span className="fw-bold" style={{ fontSize: "18px" }}>Scrappiness</span>
                 <br></br>
                 Innovation through agility; we&apos;re not agraid to tread new paths to find solutions.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Ease</span>
+                <span className="fw-bold" style={{ fontSize: "18px" }}>Ease</span>
                 <br></br>
                 Making technology accessible and manageable, we simplify the complex, ensuring a seamless experience for all.
               </p>
@@ -105,18 +110,20 @@ export default function Home() {
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleSecondSection }}>
+              <p style={{ ...styleBanner }}>
                 Empowerment Through Innovation: Discover Our Approach
               </p>
             </div>
 
             <div>
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
-              >
-                See how we make it happen
-              </button>
+              <a href="/ourapproach">
+                <button
+                  style={{ ...styleButton }}
+                  className="btn rounded-0 cta-btn"
+                >
+                  See how we make it happen
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -132,7 +139,7 @@ export default function Home() {
             >
               <Image
                 className="img-fluid shadow"
-                width={610}
+                width={590}
                 height={550}
                 src="/whatwedoSecondImg.png"
                 alt=""
@@ -143,10 +150,9 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h2>Our Mission</h2>
-              <h4 className="fw-bold" style={{ fontSize: "20px" }}>
-                &quot;To weave a digital future where every connection
-                counts&quot;
+              <h2 style={style3}>Our Mission</h2>
+              <h4 className="fw-bold mb-4" style={{ fontSize: "18px" }}>
+                &quot;To weave a digital future where every connection counts&quot;
               </h4>
               <p style={{ fontSize: "18px" }}>
                 In a world brimming with potential, our mission is to empower
@@ -154,8 +160,7 @@ export default function Home() {
                 From fostering collaboration to driving discovery, we&apos;re
                 here to help communities innovate and thrive.
               </p>
-              <br></br>
-              <h2>Our Products</h2>
+              <h2 style={{ ...style3, marginTop: "45px" }}>Our Products</h2>
               <p style={{ fontSize: "18px" }}>
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
@@ -164,13 +169,13 @@ export default function Home() {
                 digital landscape, making technology work for you.
               </p>
               <Link
-                href="/"
+                href="/yourchallenges"
                 className="btn rounded-0"
                 style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
+                  backgroundColor: "#012634",
+                  color: "#D8F0F4",
                   minWidth: "200px",
-                  marginTop: "60px",
+                  marginTop: "20px",
                 }}
               >
                 WHAT WE SOLVE
