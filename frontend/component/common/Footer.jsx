@@ -20,9 +20,10 @@ const styleKnit = {
 
 const styleSoftware = {
   color: "#ffffff",
-  fontSize: "19px",
-  fontFamily: "arial",
+  // fontFamily: "arial",
   marginTop: "-10px",
+  fontSize: "20px",
+  letterSpacing: "5px"
 };
 
 export default function Footer() {
@@ -135,9 +136,9 @@ export default function Footer() {
                   <FaInstagramSquare />
                   <FcGoogle /> */}
                 </div>
-                <p className="d-flex justify-content-center align-items-center">
+                {/* <p className="d-flex justify-content-center align-items-center">
                   Socials
-                </p>
+                </p> */}
               
                 <div
                   className=" d-flex justify-content-center align-items-center"
