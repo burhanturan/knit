@@ -26,14 +26,14 @@ public class ContactMessage {
     private Long id;
 
     @NotNull
-    private String name;
+    private String firstName;
+
+    @NotNull
+    private String lastName;
 
     @NotNull
     @Email (message = "Please enter valid email!")
     private String email;
-
-    @NotNull
-    private String subject;
 
     @NotNull
     private String message;
