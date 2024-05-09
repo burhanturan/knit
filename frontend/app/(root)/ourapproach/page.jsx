@@ -116,7 +116,7 @@ export default function Home() {
             </div>
 
             <div>
-            <a href="/">
+            <a href="/whatwedo">
               <button
                 style={{ ...styleButton }}
                 className="btn rounded-0 cta-btn"
