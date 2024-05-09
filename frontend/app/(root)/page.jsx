@@ -94,8 +94,8 @@ export default function Home() {
                 style={{
                   backgroundColor: "#18474D",
                   color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
+                  minWidth: "170px",
+                  marginTop: "20px",
                 }}
               >
                 GET IN TOUCH
