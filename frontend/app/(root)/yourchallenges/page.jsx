@@ -113,12 +113,14 @@ export default function YourChallenges() {
             </div>
 
             <div>
+            <a href="/ourapproach">
               <button
                 style={{ ...styleButton }}
                 className="btn rounded-0 cta-btn"
               >
                 See how we make it happen
               </button>
+              </a>
             </div>
           </div>
         </div>

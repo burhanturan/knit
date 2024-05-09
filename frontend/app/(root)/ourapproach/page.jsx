@@ -116,12 +116,14 @@ export default function Home() {
             </div>
 
             <div>
+            <a href="/">
               <button
                 style={{ ...styleButton }}
                 className="btn rounded-0 cta-btn"
               >
                 Discover Connected Solutions
               </button>
+              </a>
             </div>
           </div>
         </div>
