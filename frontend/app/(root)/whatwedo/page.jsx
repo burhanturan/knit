@@ -1,43 +1,62 @@
 import Image from "next/image";
 import Link from "next/link";
+import '../globals.css';
 
 import Header from "@/component/common/Header";
 
-const styleSecondSection = {
-  color: "#DDE9D3",
-  fontFamily: "Arial",
+// CONSTANTS
+const fFamilyPage = "Arial, Helvetica, sans-serif";
+const bgColorPage = "#EEE8E8";
+const fColorPage = "#18474D";
+const bgColorFrame = "#012634";
+const fColorFrame = "#DDE9D3";
+const fColorFrameHeader = "#D8F0F4";
+const bgColorButton = "#D8F0F4";
+const fColorButton = "#18474D";
+const bgColorWWSButton = "#DDE9D3";
+
+// STYLES
+const styleMain = {
+  backgroundColor: bgColorPage,
+  color: fColorPage,
+  fontFamily: fFamilyPage,
+  marginBottom: "0px",
+}
+
+const styleFrame = {
+  backgroundColor: bgColorFrame,
+  color: fColorFrame,
+};
+
+const styleFrameHeader = {
+  color: fColorFrameHeader,
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
   fontSize: "20px",
 };
 
-const styleButton = {
-  backgroundColor: "#dde9d3",
-  color: "#18474D",
+const styleFrameButton = {
+  backgroundColor: bgColorButton,
+  color: fColorButton,
   minWidth: "200px",
   marginTop: "50px",
 };
 
-const style2 = {
-  fontSize: "60px",
+const styleWWSButton = {
+  backgroundColor: fColorPage,
+  color: bgColorWWSButton,
+  width: "200px",
+  marginRight: "auto",
+  marginLeft: "auto",
+  marginBottom: "100px",
 };
 
 export default function Home() {
   return (
-    <main
-      className=""
-      style={{
-        fontFamily: "Arial",
-        backgroundColor: "#EEE8E8",
-        marginBottom: "0px",
-      }}
-    >
-      <div
-        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#EEE8E8" }}
-      >
-        <Header style={{ backgroundColor: "#EEE8E8" }} />
+    <main style={{ ...styleMain }} >
+      <div className="sticky-top absolute-top position-sticky  justify-content-between align-items-center " >
+        <Header />
       </div>
 
       <section id="about" className="about">
@@ -73,22 +92,22 @@ export default function Home() {
               <br></br>
               <h2>OUR VALUES</h2>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Integrity</span>
+                <span className="fw-bold fs-20" >Integrity</span>
                 <br></br>
                 We believe in the power of honesty, building trust with every click.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Community</span>
+                <span className="fw-bold fs-20" >Community</span>
                 <br></br>
                 Our heart lies in creating strong bonds, knitting together diverse groups for a unified purpose.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Scrappiness</span>
+                <span className="fw-bold fs-20" >Scrappiness</span>
                 <br></br>
                 Innovation through agility; we&apos;re not agraid to tread new paths to find solutions.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "20px" }}>Ease</span>
+                <span className="fw-bold fs-20" >Ease</span>
                 <br></br>
                 Making technology accessible and manageable, we simplify the complex, ensuring a seamless experience for all.
               </p>
@@ -100,23 +119,25 @@ export default function Home() {
       <section
         id="cta"
         className="container cta w-100"
-        style={{ backgroundColor: "#012634" }}
+        style={{ ...styleFrame }}
       >
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleSecondSection }}>
+              <p style={{ ...styleFrameHeader }}>
                 Empowerment Through Innovation: Discover Our Approach
               </p>
             </div>
 
             <div>
+              <a href="/ourapproach">
               <button
-                style={{ ...styleButton }}
+                style={{ ...styleFrameButton }}
                 className="btn rounded-0 cta-btn"
               >
                 See how we make it happen
               </button>
+              </a>
             </div>
           </div>
         </div>
@@ -144,11 +165,11 @@ export default function Home() {
               data-aos="fade-right"
             >
               <h2>Our Mission</h2>
-              <h4 className="fw-bold" style={{ fontSize: "20px" }}>
+              <h4 className="fw-bold fs-20" >
                 &quot;To weave a digital future where every connection
                 counts&quot;
               </h4>
-              <p style={{ fontSize: "18px" }}>
+              <p className="fs-18">
                 In a world brimming with potential, our mission is to empower
                 every individual and business with cutting-edge web solutions.
                 From fostering collaboration to driving discovery, we&apos;re
@@ -156,26 +177,28 @@ export default function Home() {
               </p>
               <br></br>
               <h2>Our Products</h2>
-              <p style={{ fontSize: "18px" }}>
+              <p className="fs-18">
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
                 comprehensive digital solutions for small businesses, we tailor
                 technology to fit your needs. Our goal? To transform your
                 digital landscape, making technology work for you.
               </p>
-              <Link
-                href="/"
-                className="btn rounded-0"
-                style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
-                }}
-              >
-                WHAT WE SOLVE
-              </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section >
+        <div className="container">
+          <div className="row">
+            <Link
+              href="/yourchallenges"
+              className="btn rounded-0"
+              style={{ ...styleWWSButton }}
+            >
+              WHAT WE SOLVE
+            </Link>
           </div>
         </div>
       </section>

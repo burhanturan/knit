@@ -35,11 +35,13 @@ a:hover {
   text-decoration: none;
 }
 
+.fs-18 { font-size: 18px; }
+.fs-20 { font-size: 20px; }
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
+/* Desktop Navigation 
 */
 /* .navbar {
   padding: 0;
