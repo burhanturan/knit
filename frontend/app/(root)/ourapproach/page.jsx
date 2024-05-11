@@ -140,12 +140,14 @@ export default function Home() {
             </div>
 
             <div>
-              <button
-                className="btn rounded-0 cta-btn"
-                style={{ ...styleFrameButton }}
-              >
-                Discover Connected Solutions
-              </button>
+              <a href="/yourchallenges">
+                <button
+                  className="btn rounded-0 cta-btn"
+                  style={{ ...styleFrameButton }}
+                >
+                  Discover Connected Solutions
+                </button>
+              </a>
             </div>
           </div>
         </div>
