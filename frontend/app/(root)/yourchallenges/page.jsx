@@ -46,25 +46,6 @@ const styleFrameButton = {
   marginTop: "50px",
 };
 
-const styleButton = {
-  backgroundColor: "#D8F0F4",
-  color: "#012634",
-  minWidth: "300px",
-  marginTop: "50px",
-};
-
-
-
-
-const styleSecondSection = {
-  color: "#DDE9D3",
-  fontFamily: "Arial",
-  display: "inline-flex",
-  width: "90%",
-  justifyContent: "center",
-  fontSize: "20px",
-};
-
 
 export default function YourChallenges() {
   return (

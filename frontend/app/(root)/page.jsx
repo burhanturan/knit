@@ -1,42 +1,74 @@
 import Image from "next/image";
 import Link from "next/link";
+import './globals.css';
 
 import Header from "@/component/common/Header";
 
-const styleSecondSection = {
-  color: "#DDE9D3",
-  fontFamily: "Arial",
+// CONSTANTS
+const fFamilyPage = "Arial, Helvetica, sans-serif";
+const bgColorPage = "#D8F0F4";
+const fColorPage = "#18474D";
+const bgColorFrame = "#18474D";
+const fColorFrame = "#DDE9D3";
+const fColorFrameHeader = "#DDE9D3";
+const bgColorButton = "#18474D";
+const fColorButton = "#DDE9D3";
+const bgColorFrameButton = "#DDE9D3";
+const fColorFrameButton = "#18474D";
+
+// STYLES
+const styleMain = {
+  backgroundColor: bgColorPage,
+  color: fColorPage,
+  fontFamily: fFamilyPage,
+  marginBottom: "0px",
+}
+
+const styleMainDiv = {
+  backgroundColor: bgColorPage,
+}
+
+const styleFrame = {
+  backgroundColor: bgColorFrame,
+  color: fColorFrame,
+};
+
+const styleFrameHeader = {
+  color: fColorFrameHeader,
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
   fontSize: "20px",
+
+  color: "#DDE9D3",
 };
 
-const styleButton = {
-  backgroundColor: "#dde9d3",
-  color: "#18474D",
+const styleFrameButton = {
+  backgroundColor: bgColorFrameButton,
+  color: fColorFrameButton,
   minWidth: "200px",
 };
 
-const styleh1 = {
-  fontSize: "16px",
+const styleButton = {
+  backgroundColor: bgColorButton,
+  color: fColorButton,
+  minWidth: "200px",
+  marginTop: "60px",
 };
+
+
 
 export default function Home() {
   return (
     <main
       className=""
-      style={{
-        fontFamily: "Arial",
-        backgroundColor: "#D8F0F4",
-        marginBottom: "0px",
-      }}
+      style={{ ...styleMain }}
     >
       <div
         className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#D8F0F4" }}
+        style={{ ...styleMainDiv }}
       >
-        <Header style={{ backgroundColor: "#D8F0F4" }} />
+        <Header />
       </div>
 
       <section id="about" className="about">
@@ -59,13 +91,13 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold" style={styleh1}>
+              <h4 className="fw-bold fs-16" >
                 CONNECTING COMMUNITIES, BUILDING DREAMS
               </h4>
-              <h1 className="fw-bold mb-4" style={{ fontSize: "44px" }}>
+              <h1 className="fw-bold mb-4 fs-44" >
                 Let&apos;s Knit the Future!
               </h1>
-              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
+              <p className="fw-bold fs-18" >
                 Join Us in Weaving a Future Where Technology Unites Us All
               </p>
               <p>
@@ -91,12 +123,7 @@ export default function Home() {
               <Link
                 href="/letstalk"
                 className="btn rounded-0"
-                style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
-                }}
+                style={{ ...styleButton }}
               >
                 GET IN TOUCH
               </Link>
@@ -108,11 +135,12 @@ export default function Home() {
       <section
         id="cta"
         className="container cta"
+        style={{ ...styleFrame }}
       >
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleSecondSection }}>
+              <p style={{ ...styleFrameHeader }}>
                 Software means investing smartly in technology
                 <br />
                 that drives real, impactful changes.
@@ -122,7 +150,7 @@ export default function Home() {
             <div>
               <a href="/whatwedo">
                 <button
-                  style={{ ...styleButton }}
+                  style={{ ...styleFrameButton }}
                   className="btn rounded-0 cta-btn"
                 >
                   Learn more about what we do
@@ -154,13 +182,13 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold" style={{ fontSize: "17.5px" }}>
+              <h4 className="fw-bold fs-18" >
                 MAKE YOUR BUSINESS FUTURE-READY
               </h4>
-              <h1 className="fw-bold mb-4" style={{ fontSize: "46px" }}>
+              <h1 className="fw-bold mb-4 fs-44">
                 Digitize to Thrive
               </h1>
-              <h5 className="fw-bold mb-4" style={{ fontSize: "17px" }}>
+              <h5 className="fw-bold mb-4 fs-18" >
                 Join Us in Weaving a Future Where Technology Unites Us All
               </h5>
               <p>
@@ -183,12 +211,7 @@ export default function Home() {
               <Link
                 href="/whatwedo"
                 className="btn rounded-0"
-                style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
-                }}
+                style={{ ...styleButton }}
               >
                 OUR SOLUTIONS
               </Link>
