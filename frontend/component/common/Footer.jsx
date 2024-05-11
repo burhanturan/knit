@@ -74,7 +74,7 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href="#" className="text-white text-decoration-none">
+                  <a href="/privacypolicy" className="text-white text-decoration-none">
                     Privacy Policy
                   </a>
                 </p>
