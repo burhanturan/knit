@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
       title: 'Introduction',
       content: (
         <>
-          Welcome to Knit Software! We're all about creating connections and ensuring our community members feel valued and respected. This Privacy Policy reflects our dedication to safeguarding your personal information while keeping everything as simple and transparent as possible.
+          Welcome to Knit Software! We&apos;re all about creating connections and ensuring our community members feel valued and respected. This Privacy Policy reflects our dedication to safeguarding your personal information while keeping everything as simple and transparent as possible.
         </>
       ),
     },
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
       title: 'Your Rights and Choices',
       content: (
         <>
-          You have the right to inquire about, update, or delete your personal information at any time. Simply email us at info@knitsoftware.com, and we'll assist you promptly.
+          You have the right to inquire about, update, or delete your personal information at any time. Simply email us at info@knitsoftware.com, and we&apos;ll assist you promptly.
         </>
       ),
     },
@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
       title: 'Changes to Our Privacy Policy',
       content: (
         <>
-          Should we update our Privacy Policy, we’ll inform you through our website or direct communication, keeping you in the loop.
+          Should we update our Privacy Policy, we&apos;ll inform you through our website or direct communication, keeping you in the loop.
         </>
       ),
     },
@@ -159,7 +159,7 @@ export default function PrivacyPolicy() {
       title: 'Contact Us',
       content: (
         <>
-          For any questions or concerns about your privacy and data protection, don't hesitate to contact our support team at info@knitsoftware.com. We're here to help and ensure your experience with Knit Software is secure, transparent, and positive.
+          For any questions or concerns about your privacy and data protection, don&apos;t hesitate to contact our support team at info@knitsoftware.com. We&apos;re here to help and ensure your experience with Knit Software is secure, transparent, and positive.
         </>
       ),
     },
@@ -197,7 +197,7 @@ export default function PrivacyPolicy() {
             >
               <h1 className="fw-bold mb-3 text-center">Privacy Policy</h1>
               <p style={{ margin: '20px auto', maxWidth: '900px' }}>
-                At Knit Software, we deeply value your privacy and are committed to protecting your personal data with integrity and transparency. Our policies are designed to be straightforward, ensuring you understand how we handle your information. Here's what you need to know:
+                At Knit Software, we deeply value your privacy and are committed to protecting your personal data with integrity and transparency. Our policies are designed to be straightforward, ensuring you understand how we handle your information. Here&apos;s what you need to know:
               </p>
 
             
