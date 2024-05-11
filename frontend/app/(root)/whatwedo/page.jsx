@@ -16,6 +16,10 @@ const fColorButton = "#18474D";
 const bgColorWWSButton = "#DDE9D3";
 
 // STYLES
+const styleMainDiv = {
+  backgroundColor: bgColorPage,
+}
+
 const styleMain = {
   backgroundColor: bgColorPage,
   color: fColorPage,
@@ -43,20 +47,20 @@ const styleFrameButton = {
   marginTop: "50px",
 };
 
-const styleWWSButton = {
+const styleButton = {
   backgroundColor: fColorPage,
   color: bgColorWWSButton,
-  width: "200px",
-  marginRight: "auto",
-  marginLeft: "auto",
-  marginBottom: "100px",
+  marginTop: "60px",
 };
 
 export default function Home() {
   return (
     <main style={{ ...styleMain }} >
-      <div className="sticky-top absolute-top position-sticky  justify-content-between align-items-center " >
-        <Header />
+      <div 
+        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center " 
+        style={{ ...styleMainDiv }}
+      >
+        <Header  />
       </div>
 
       <section id="about" className="about">
@@ -184,21 +188,14 @@ export default function Home() {
                 technology to fit your needs. Our goal? To transform your
                 digital landscape, making technology work for you.
               </p>
+              <Link
+                href="/yourchallenges"
+                className="btn rounded-0"
+                style={{ ...styleButton }}
+              >
+                WHAT WE SOLVE
+              </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section >
-        <div className="container">
-          <div className="row">
-            <Link
-              href="/yourchallenges"
-              className="btn rounded-0"
-              style={{ ...styleWWSButton }}
-            >
-              WHAT WE SOLVE
-            </Link>
           </div>
         </div>
       </section>
