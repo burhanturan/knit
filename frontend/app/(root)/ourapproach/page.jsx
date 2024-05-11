@@ -1,43 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
+import '../globals.css';
 
 import Header from "@/component/common/Header";
 
-const styleSecondSection = {
-  color: "#DDE9D3",
-  fontFamily: "Arial",
+
+// CONSTANTS
+const fFamilyPage = "Arial, Helvetica, sans-serif";
+const bgColorPage = "#F0F6EA";
+const fColorPage = "#18474D";
+const bgColorFrame = "#18474D";
+const fColorFrame = "#DDE9D3";
+const fColorFrameHeader = "#D8F0F4";
+const bgColorButton = "#18474D";
+const fColorButton = "#DDE9D3";
+const bgColorFrameButton = "#D8F0F4";
+const fColorFrameButton = "#18474D";
+
+// STYLES
+const styleMainDiv = {
+  backgroundColor: bgColorPage,
+}
+
+const styleMain = {
+  backgroundColor: bgColorPage,
+  color: fColorPage,
+  fontFamily: fFamilyPage,
+  marginBottom: "0px",
+}
+
+const styleButton = {
+  backgroundColor: bgColorButton,
+  color: fColorButton,
+  minWidth: "200px",
+  marginTop: "60px",
+};
+
+const styleFrame = {
+  backgroundColor: bgColorFrame,
+  color: fColorFrame,
+};
+
+const styleFrameHeader = {
+  color: fColorFrameHeader,
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
   fontSize: "20px",
 };
 
-const styleButton = {
-  backgroundColor: "#dde9d3",
-  color: "#18474D",
+const styleFrameButton = {
+  backgroundColor: bgColorFrameButton,
+  color: fColorFrameButton,
   minWidth: "200px",
   marginTop: "50px",
 };
 
-const style1 = {
-  fontSize: "18px",
-};
 
 export default function Home() {
   return (
     <main
       className=""
-      style={{
-        fontFamily: "Arial",
-        backgroundColor: "#F0F6EA",
-        marginBottom: "0px",
-      }}
+      style={{ ...styleMain }}
     >
       <div
         className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#F0F6EA" }}
+        style={{ ...styleMainDiv }}
       >
-        <Header style={{ backgroundColor: "#F0F6EA" }} />
+        <Header />
       </div>
 
       <section id="about" className="about">
@@ -60,7 +90,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold" style={style1}>
+              <h4 className="fw-bold fs-18">
                 CRAFTING EXCELLENCE THROUGH COLLABORATION AND AGILITY
               </h4>
               <h1 className="fw-bold">Our Secret Sauce</h1>
@@ -87,12 +117,7 @@ export default function Home() {
               <Link
                 href="/yourchallenges"
                 className="btn rounded-0"
-                style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
-                }}
+                style={{ ...styleButton }}
               >
                 WHO WE SERVE
               </Link>
@@ -104,25 +129,24 @@ export default function Home() {
       <section
         id="cta"
         className="container cta w-100"
-        style={{ backgroundColor: "#18474D" }}
+        style={{ ...styleFrame }}
       >
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleSecondSection }}>
-                Unravel the Potential - Connect the Dots to Hidden Opportunities
-                with Us.
+              <p style={{ ...styleFrameHeader }}>
+                Unravel the Potential - Connect the Dots to Hidden Opportunities with Us.
               </p>
             </div>
 
             <div>
-            <a href="/whatwedo">
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
-              >
-                Discover Connected Solutions
-              </button>
+              <a href="/yourchallenges">
+                <button
+                  className="btn rounded-0 cta-btn"
+                  style={{ ...styleFrameButton }}
+                >
+                  Discover Connected Solutions
+                </button>
               </a>
             </div>
           </div>
@@ -170,12 +194,7 @@ export default function Home() {
               <Link
                 href="/whatwedo"
                 className="btn rounded-0"
-                style={{
-                  backgroundColor: "#18474D",
-                  color: "#DDE9D3",
-                  minWidth: "200px",
-                  marginTop: "60px",
-                }}
+                style={{ ...styleButton, marginTop:"185px" }}
               >
                 THE DIFFERENCE WE MAKE
               </Link>

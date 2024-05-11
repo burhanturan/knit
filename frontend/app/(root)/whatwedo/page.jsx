@@ -1,49 +1,65 @@
 import Image from "next/image";
 import Link from "next/link";
+import '../globals.css';
 import Header from "@/component/common/Header";
 
-const styleBanner = {
-  color: "#D8F0F4",
-  fontFamily: "Arial",
+// CONSTANTS
+const fFamilyPage = "Arial, Helvetica, sans-serif";
+const bgColorPage = "#EEE8E8";
+const fColorPage = "#18474D";
+const bgColorFrame = "#012634";
+const fColorFrame = "#DDE9D3";
+const fColorFrameHeader = "#D8F0F4";
+const bgColorButton = "#18474D";
+const fColorButton = "#18474D";
+const bgColorFrameButton = "#D8F0F4";
+
+// STYLES
+const styleMainDiv = {
+  backgroundColor: bgColorPage,
+}
+
+const styleMain = {
+  backgroundColor: bgColorPage,
+  color: fColorPage,
+  fontFamily: fFamilyPage,
+  marginBottom: "0px",
+}
+
+const styleFrame = {
+  backgroundColor: bgColorFrame,
+  color: fColorFrame,
+};
+
+const styleFrameHeader = {
+  color: fColorFrameHeader,
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
   fontSize: "20px",
 };
 
+const styleFrameButton = {
+  backgroundColor: bgColorFrameButton,
+  color: fColorButton,
+  minWidth: "200px",
+  marginTop: "50px",
+};
+
 const styleButton = {
-  backgroundColor: "#D8F0F4",
-  color: "#18474D",
-  minWidth: "260px",
-};
-
-const style2 = {
-  fontSize: "medium",
-  fontWeight: "bold",
-};
-
-const style3 = {
-  fontSize: "290%",
-  fontWeight: "bold",
-  marginBottom: "20px",
+  backgroundColor: bgColorButton,
+  color: bgColorFrameButton,
+  marginTop: "60px",
 };
 
 export default function WhatWeDo() {
   return (
-    <main
-      className=""
-      style={{
-        fontFamily: "Arial",
-        backgroundColor: "#EEE8E8",
-        marginBottom: "0px",
-        color: "#18474D"
-      }}
-    >
-      <div
-        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#EEE8E8" }}
+    <main style={{ ...styleMain }} >
+      <div 
+        className="sticky-top absolute-top position-sticky  justify-content-between align-items-center " 
+        style={{ ...styleMainDiv }}
       >
-        <Header style={{ backgroundColor: "#EEE8E8" }} />
+        <Header  />
       </div>
 
       <section id="about" className="about">
@@ -78,22 +94,22 @@ export default function WhatWeDo() {
               </p>
               <h6 className="fw-bold mb-3">OUR VALUES</h6>
               <p>
-              <span className="fw-bold" style={{ fontSize: "18px" }}>Integrity</span>
+                <span className="fw-bold fs-20" >Integrity</span>
                 <br></br>
                 We believe in the power of honesty, building trust with every click.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "18px" }}>Community</span>
+                <span className="fw-bold fs-20" >Community</span>
                 <br></br>
                 Our heart lies in creating strong bonds, knitting together diverse groups for a unified purpose.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "18px" }}>Scrappiness</span>
+                <span className="fw-bold fs-20" >Scrappiness</span>
                 <br></br>
                 Innovation through agility; we&apos;re not agraid to tread new paths to find solutions.
               </p>
               <p>
-                <span className="fw-bold" style={{ fontSize: "18px" }}>Ease</span>
+                <span className="fw-bold fs-20" >Ease</span>
                 <br></br>
                 Making technology accessible and manageable, we simplify the complex, ensuring a seamless experience for all.
               </p>
@@ -105,24 +121,24 @@ export default function WhatWeDo() {
       <section
         id="cta"
         className="container cta w-100"
-        style={{ backgroundColor: "#012634" }}
+        style={{ ...styleFrame }}
       >
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleBanner }}>
+              <p style={{ ...styleFrameHeader }}>
                 Empowerment Through Innovation: Discover Our Approach
               </p>
             </div>
 
             <div>
               <a href="/ourapproach">
-                <button
-                  style={{ ...styleButton }}
-                  className="btn rounded-0 cta-btn"
-                >
-                  See how we make it happen
-                </button>
+              <button
+                style={{ ...styleFrameButton }}
+                className="btn rounded-0 cta-btn"
+              >
+                See how we make it happen
+              </button>
               </a>
             </div>
           </div>
@@ -150,18 +166,20 @@ export default function WhatWeDo() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h2 style={style3}>Our Mission</h2>
-              <h4 className="fw-bold mb-4" style={{ fontSize: "18px" }}>
-                &quot;To weave a digital future where every connection counts&quot;
+              <h2>Our Mission</h2>
+              <h4 className="fw-bold fs-20" >
+                &quot;To weave a digital future where every connection
+                counts&quot;
               </h4>
-              <p style={{ fontSize: "18px" }}>
+              <p className="fs-18">
                 In a world brimming with potential, our mission is to empower
                 every individual and business with cutting-edge web solutions.
                 From fostering collaboration to driving discovery, we&apos;re
                 here to help communities innovate and thrive.
               </p>
-              <h2 style={{ ...style3, marginTop: "45px" }}>Our Products</h2>
-              <p style={{ fontSize: "18px" }}>
+              <br></br>
+              <h2>Our Products</h2>
+              <p className="fs-18">
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
                 comprehensive digital solutions for small businesses, we tailor
@@ -171,12 +189,7 @@ export default function WhatWeDo() {
               <Link
                 href="/yourchallenges"
                 className="btn rounded-0"
-                style={{
-                  backgroundColor: "#012634",
-                  color: "#D8F0F4",
-                  minWidth: "200px",
-                  marginTop: "20px",
-                }}
+                style={{ ...styleButton }}
               >
                 WHAT WE SOLVE
               </Link>
