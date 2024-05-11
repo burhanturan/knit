@@ -14,9 +14,9 @@ public class ContactMessageMapper {
 
     public ContactMessage mapContactMessageRequestToContactMessage  (ContactMessageRequest contactMessageRequest){
         return ContactMessage.builder()
-                .name(contactMessageRequest.getName())
+                .firstName(contactMessageRequest.getFirstName())
                 .email(contactMessageRequest.getEmail())
-                .subject(contactMessageRequest.getSubject())
+                .lastName(contactMessageRequest.getLastName())
                 .message(contactMessageRequest.getMessage())
                 .dateTime(LocalDateTime.now())
                 .build();
@@ -25,9 +25,9 @@ public class ContactMessageMapper {
     public ContactMessageResponse mapContactMessageToContactMessageResponse (ContactMessage contactMessage){
 
         return ContactMessageResponse.builder()
-                .name(contactMessage.getName())
+                .firstName(contactMessage.getFirstName())
                 .email(contactMessage.getEmail())
-                .subject(contactMessage.getSubject())
+                .lastName(contactMessage.getLastName())
                 .message(contactMessage.getMessage())
                 .dateTime(LocalDateTime.now())
                 .build();
