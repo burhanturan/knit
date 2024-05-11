@@ -7,6 +7,14 @@ const listStyles = {
   paddingTop: '7px',
 };
 
+const styleInfoList = {
+  maxWidth: "900px", 
+  margin: "0 auto", 
+  paddingLeft: "0", 
+  fontSize: "90%", 
+  marginBottom: "85px"
+}
+
 const ListItem = ({ number, title, content }) => (
   <li className="list-group-item">
     <div className="row">
@@ -202,7 +210,7 @@ export default function PrivacyPolicy() {
 
             
               {/* Render the Privacy Policy section */}
-              <InformationList items={privacyPolicyItems} style={{ maxWidth: "900px", margin: "0 auto", paddingLeft: "0", fontSize: "90%", marginBottom: "85px" }} />
+              <InformationList items={privacyPolicyItems} style={{ ...styleInfoList }} />
 
  
               <div style={{ marginTop: '50px' }}>

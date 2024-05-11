@@ -59,7 +59,7 @@ export default function WhatWeDo() {
         className="sticky-top absolute-top position-sticky  justify-content-between align-items-center " 
         style={{ ...styleMainDiv }}
       >
-        <Header  />
+        <Header />
       </div>
 
       <section id="about" className="about">
@@ -82,7 +82,7 @@ export default function WhatWeDo() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 style={style2}>EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
+              <h4 className="fw-bold fs-20">EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
               <h1 className="fw-bold mb-3">What we do at Knit Software</h1>
               <h5 className="fw-bold mb-4">We are all about making an impact</h5>
               <p>
