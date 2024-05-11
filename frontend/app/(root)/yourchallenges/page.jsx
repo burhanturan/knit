@@ -1,6 +1,60 @@
 import Image from "next/image";
+import '../globals.css';
 
 import Header from "@/component/common/Header";
+
+// CONSTANTS
+const fFamilyPage = "Arial, Helvetica, sans-serif";
+const bgColorPage = "#FAF8E5";
+const fColorPage = "#18474D";
+const bgColorFrame = "#012634";
+const fColorFrame = "#DDE9D3";
+const fColorFrameHeader = "#D8F0F4";
+const bgColorFrameButton = "#D8F0F4";
+const fColorFrameButton = "#012634";
+
+// STYLES
+const styleMain = {
+  backgroundColor: bgColorPage,
+  color: fColorPage,
+  fontFamily: fFamilyPage,
+  marginBottom: "0px",
+}
+
+const styleMainDiv = {
+  backgroundColor: bgColorPage,
+  marginBottom: "0px",
+}
+
+const styleFrame = {
+  backgroundColor: bgColorFrame,
+  color: fColorFrame,
+};
+
+const styleFrameHeader = {
+  color: fColorFrameHeader,
+  display: "inline-flex",
+  width: "90%",
+  justifyContent: "center",
+  fontSize: "20px",
+};
+
+const styleFrameButton = {
+  backgroundColor: bgColorFrameButton,
+  color: fColorFrameButton,
+  minWidth: "200px",
+  marginTop: "50px",
+};
+
+const styleButton = {
+  backgroundColor: "#D8F0F4",
+  color: "#012634",
+  minWidth: "300px",
+  marginTop: "50px",
+};
+
+
+
 
 const styleSecondSection = {
   color: "#DDE9D3",
@@ -11,36 +65,18 @@ const styleSecondSection = {
   fontSize: "20px",
 };
 
-const styleButton = {
-  backgroundColor: "#D8F0F4",
-  color: "#012634",
-  minWidth: "300px",
-  marginTop: "50px",
-};
-
-const styleH4 = {
-  fontSize: "19px",
-};
-
-const style2 = {
-  fontSize: "20px",
-};
 
 export default function YourChallenges() {
   return (
     <main
       className=""
-      style={{
-        fontFamily: "Arial",
-        backgroundColor: "#FAF8E5",
-        marginBottom: "0px",
-      }}
+      style={{ ...styleMain }}
     >
       <div
         className="sticky-top absolute-top position-sticky  justify-content-between align-items-center "
-        style={{ backgroundColor: "#FAF8E5" }}
+        style={{ ...styleMainDiv }}
       >
-        <Header style={{ backgroundColor: "#FAF8E5" }} />
+        <Header />
       </div>
 
       <section id="about" className="about">
@@ -63,9 +99,7 @@ export default function YourChallenges() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 style={{ ...styleH4 }}>
-                ELEVATING BUSINESS INTO THE DIGITAL FUTURE
-              </h4>
+              <h4 className="fs-18"> ELEVATING BUSINESS INTO THE DIGITAL FUTURE </h4>
               <h1 className="fw-bold">Who we serve</h1>
               <h5 className="fw-bold">We overcome your biggest challenges</h5>
               <p>
@@ -102,23 +136,25 @@ export default function YourChallenges() {
       <section
         id="cta"
         className="container cta w-100"
-        style={{ backgroundColor: "#18474D" }}
+        style={{ ...styleFrame }}
       >
         <div data-aos="zoom-in">
           <div className="text-center">
             <div>
-              <p style={{ ...styleSecondSection }}>
+              <p style={{ ...styleFrameHeader }}>
                 Empowerment Through Innovation: Discover Our Approach
               </p>
             </div>
 
             <div>
-              <button
-                style={{ ...styleButton }}
-                className="btn rounded-0 cta-btn"
-              >
-                See how we make it happen
-              </button>
+              <a href="/whatwedo">
+                <button
+                  style={{ ...styleFrameButton }}
+                  className="btn rounded-0 cta-btn"
+                >
+                  See how we make it happen
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -145,13 +181,13 @@ export default function YourChallenges() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h1 className="fw-bold" style={style2}>
+              <h1 className="fw-bold fs-20" >
                 ANALOG TO DIGITAL LEAP
               </h1>
-              <h4 className="fw-bold" style={{ fontSize: "17px" }}>
+              <h4 className="fw-bold fs-18" >
                 Bridging the Digital Divide
               </h4>
-              <p style={{ fontSize: "18px" }}>
+              <p className="fs-18" >
                 Transitioning from a traditional analog business to a digital
                 powerhouse can seem daunting. How do you extend your reach and
                 tap into new markets? Knit Software specializes in demystifying
@@ -160,11 +196,11 @@ export default function YourChallenges() {
                 our solutions, anticipate a surge in client acquisition and a
                 scalable model poised for expansion.
               </p>
-              <h4 className="fw-bold" style={{ ...style2, marginTop: "45px" }}>
+              <h4 className="fw-bold fs-20" style={{marginTop: "45px" }}>
                 PROCESS OPTIMIZATION
               </h4>
               <h5 className="fw-bold">Streamlining for Efficiency</h5>
-              <p style={{ fontSize: "18px" }}>
+              <p className="fs-18" >
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
                 comprehensive digital solutions for small businesses, we tailor

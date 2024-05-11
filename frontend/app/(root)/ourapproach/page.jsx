@@ -11,10 +11,10 @@ const bgColorPage = "#F0F6EA";
 const fColorPage = "#18474D";
 const bgColorFrame = "#18474D";
 const fColorFrame = "#DDE9D3";
-const fColorFrameHeader = "#DDE9D3";
+const fColorFrameHeader = "#D8F0F4";
 const bgColorButton = "#18474D";
 const fColorButton = "#DDE9D3";
-const bgColorFrameButton = "#DDE9D3";
+const bgColorFrameButton = "#D8F0F4";
 const fColorFrameButton = "#18474D";
 
 // STYLES

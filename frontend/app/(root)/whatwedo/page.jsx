@@ -11,9 +11,9 @@ const fColorPage = "#18474D";
 const bgColorFrame = "#012634";
 const fColorFrame = "#DDE9D3";
 const fColorFrameHeader = "#D8F0F4";
-const bgColorButton = "#D8F0F4";
+const bgColorButton = "#18474D";
 const fColorButton = "#18474D";
-const bgColorWWSButton = "#DDE9D3";
+const bgColorFrameButton = "#D8F0F4";
 
 // STYLES
 const styleMainDiv = {
@@ -41,15 +41,15 @@ const styleFrameHeader = {
 };
 
 const styleFrameButton = {
-  backgroundColor: bgColorButton,
+  backgroundColor: bgColorFrameButton,
   color: fColorButton,
   minWidth: "200px",
   marginTop: "50px",
 };
 
 const styleButton = {
-  backgroundColor: fColorPage,
-  color: bgColorWWSButton,
+  backgroundColor: bgColorButton,
+  color: bgColorFrameButton,
   marginTop: "60px",
 };
 
