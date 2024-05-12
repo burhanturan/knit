@@ -43,7 +43,7 @@ const styleFrameButton = {
   backgroundColor: bgColorFrameButton,
   color: fColorFrameButton,
   minWidth: "200px",
-  marginTop: "50px",
+  marginTop: "5px",
 };
 
 
