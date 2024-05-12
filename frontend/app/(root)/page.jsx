@@ -143,7 +143,7 @@ export default function Home() {
               <p style={{ ...styleFrameHeader }}>
                 Software means investing smartly in technology
                 <br />
-                that drives real, impactful changes.
+                that drives real, impactful change
               </p>
             </div>
 
