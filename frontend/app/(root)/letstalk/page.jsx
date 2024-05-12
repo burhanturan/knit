@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Header from "@/component/common/Header"
+import { ContactUs } from "./ContactUs"
 
 const styleButton = {
   backgroundColor: "#0c2543",
@@ -68,7 +69,7 @@ export default function LetsTalk() {
                 conversation that could change the course of <br/> your project.
               </p>
               <div>
-                <a href="/">
+                <a href="/contactus">
                   <button
                     style={{ ...styleButton }}
                     className="btn rounded-0 cta-btn"
@@ -77,6 +78,7 @@ export default function LetsTalk() {
                   </button>
                 </a>
               </div>
+              <ContactUs />
               <p className="fw-bold" style={{ fontSize: "16.5px" }}>
                 {" "}
                 Join Our Tapestry of Talent
