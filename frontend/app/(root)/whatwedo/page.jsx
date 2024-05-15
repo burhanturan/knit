@@ -36,7 +36,7 @@ const styleFrameHeader = {
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
-  fontSize: "20px",
+  fontSize: "1.5em",
 };
 
 const styleFrameButton = {
@@ -50,6 +50,11 @@ const styleButton = {
   backgroundColor: bgColorButton,
   color: bgColorFrameButton,
   marginTop: "50px",
+};
+
+const stylePageTwo = {
+  fontWeight: 'bold',
+  fontSize: '2.75em',
 };
 
 export default function WhatWeDo() {
@@ -82,8 +87,8 @@ export default function WhatWeDo() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold fs-20">EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION</h4>
-              <h1 className="fw-bold mb-3">What we do at Knit Software</h1>
+              <h4 style={{fontSize:'1.15em'}} className="fw-bold">EMPOWERING COMMUNITIES THROUGH DIGITAL INNOVATION </h4>
+              <h1 style={{fontSize:'2.80em'}} className="fw-bold mb-3">What we do at Knit Software</h1>
               <h5 className="fw-bold mb-4">We are all about making an impact</h5>
               <p>
                 At Knit Software, we&apos;re more than just a technology
@@ -94,22 +99,22 @@ export default function WhatWeDo() {
               </p>
               <h6 className="fw-bold mb-3">OUR VALUES</h6>
               <p>
-                <span className="fw-bold fs-20" >Integrity</span>
+                <span style={{fontSize:'1.25em'}} className="fw-bold" >Integrity</span>
                 <br></br>
                 We believe in the power of honesty, building trust with every click.
               </p>
               <p>
-                <span className="fw-bold fs-20" >Community</span>
+                <span style={{fontSize:'1.25em'}} className="fw-bold" >Community</span>
                 <br></br>
                 Our heart lies in creating strong bonds, knitting together diverse groups for a unified purpose.
               </p>
               <p>
-                <span className="fw-bold fs-20" >Scrappiness</span>
+                <span style={{fontSize:'1.25em'}} className="fw-bold" >Scrappiness</span>
                 <br></br>
                 Innovation through agility; we&apos;re not agraid to tread new paths to find solutions.
               </p>
               <p>
-                <span className="fw-bold fs-20" >Ease</span>
+                <span style={{fontSize:'1.25em'}} className="fw-bold" >Ease</span>
                 <br></br>
                 Making technology accessible and manageable, we simplify the complex, ensuring a seamless experience for all.
               </p>
@@ -166,20 +171,20 @@ export default function WhatWeDo() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h2>Our Mission</h2>
-              <h4 className="fw-bold fs-20" >
+              <h2 style={{...stylePageTwo}}>Our Mission</h2>
+              <h4 style={{fontSize:'1.25em'}} className="fw-bold" >
                 &quot;To weave a digital future where every connection
                 counts&quot;
               </h4>
-              <p className="fs-18">
+              <p style={{fontSize:'1.25em'}}>
                 In a world brimming with potential, our mission is to empower
                 every individual and business with cutting-edge web solutions.
                 From fostering collaboration to driving discovery, we&apos;re
                 here to help communities innovate and thrive.
               </p>
               <br></br>
-              <h2>Our Products</h2>
-              <p className="fs-18">
+              <h2 style={{...stylePageTwo}}>Our Products</h2>
+              <p style={{fontSize:'1.25em'}}>
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
                 comprehensive digital solutions for small businesses, we tailor

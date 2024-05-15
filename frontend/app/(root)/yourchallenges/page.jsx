@@ -36,7 +36,8 @@ const styleFrameHeader = {
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
-  fontSize: "20px",
+  fontSize: "1.25em",
+  fontWeight: "bold",
 };
 
 const styleFrameButton = {
@@ -46,6 +47,17 @@ const styleFrameButton = {
   marginTop: "5px",
 };
 
+const styleHeaderSix = {
+  fontWeight: "bold",
+  marginTop: "20px",
+  marginBottom: "15px"
+};
+
+const stylePageTwo = {
+  fontSize:'1.25em',
+  fontWeight: 'bold',
+  marginBottom: '20px'
+};
 
 export default function YourChallenges() {
   return (
@@ -80,9 +92,9 @@ export default function YourChallenges() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fs-18"> ELEVATING BUSINESS INTO THE DIGITAL FUTURE </h4>
+              <h4 style={{fontSize:'1.25em'}} className="fw-bold"> ELEVATING BUSINESS INTO THE DIGITAL FUTURE </h4>
               <h1 className="fw-bold">Who we serve</h1>
-              <h5 className="fw-bold">We overcome your biggest challenges</h5>
+              <h5 className="fw-bold mb-3">We overcome your biggest challenges</h5>
               <p>
                 At Knit Software, we serve forward-thinking businesses ready to
                 embrace the transformative power of digital innovation. From
@@ -95,7 +107,7 @@ export default function YourChallenges() {
                 unique challenges, bound by a common goal - to thrive in a
                 connected world.
               </p>
-              <h6 className="fw-bold">STALE DIGITAL PRESENCE</h6>
+              <h6 style={{...styleHeaderSix}}>STALE DIGITAL PRESENCE</h6>
               <p>
                 <strong>Revitalize Your Online Identity</strong>
                 <br></br>
@@ -162,13 +174,13 @@ export default function YourChallenges() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h1 className="fw-bold fs-20" >
+              <h1 style={{...stylePageTwo}} >
                 ANALOG TO DIGITAL LEAP
               </h1>
-              <h4 className="fw-bold fs-18" >
+              <h4 style={{fontSize:'1.125em'}} className="fw-bold">
                 Bridging the Digital Divide
               </h4>
-              <p className="fs-18" >
+              <p style={{fontSize:'1.25em'}} >
                 Transitioning from a traditional analog business to a digital
                 powerhouse can seem daunting. How do you extend your reach and
                 tap into new markets? Knit Software specializes in demystifying
@@ -177,11 +189,11 @@ export default function YourChallenges() {
                 our solutions, anticipate a surge in client acquisition and a
                 scalable model poised for expansion.
               </p>
-              <h4 className="fw-bold fs-20" style={{marginTop: "45px" }}>
+              <h4 style={{...stylePageTwo, marginTop: "45px" }}>
                 PROCESS OPTIMIZATION
               </h4>
               <h5 className="fw-bold">Streamlining for Efficiency</h5>
-              <p className="fs-18" >
+              <p style={{fontSize:'1.125em'}} >
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
                 comprehensive digital solutions for small businesses, we tailor

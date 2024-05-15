@@ -9,8 +9,8 @@ const styleButton = {
   marginTop: "13px",
 }
 
-const styleh1 = {
-  fontSize: "16px",
+const styleh4 = {
+  fontSize: "1.15em",
 }
 
 export default function LetsTalk() {
@@ -21,6 +21,7 @@ export default function LetsTalk() {
         fontFamily: "Arial",
         backgroundColor: "#ffffff",
         marginBottom: "0px",
+        color: "#18474D",
       }}
     >
       <div
@@ -50,13 +51,13 @@ export default function LetsTalk() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold" style={{ ...styleh1 }}>
+              <h4 className="fw-bold" style={{ ...styleh4 }}>
                 WE WOULD LOVE TO CONNECT
               </h4>
-              <h1 className="fw-bold mb-4" style={{ fontSize: "44px" }}>
+              <h1 className="fw-bold mb-4" style={{ fontSize: "2.75em" }}>
                 Let&apos;s talk!
               </h1>
-              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
+              <p className="fw-bold" style={{ fontSize: "1.03125em" }}>
                 Bringing ideas to life
               </p>
               <p>
@@ -158,7 +159,7 @@ export default function LetsTalk() {
                 </div>
               </div>
 
-              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
+              <p className="fw-bold" style={{ fontSize: "1.03125em" }}>
                 Join Our Tapestry of Talent
               </p>
               <p>
