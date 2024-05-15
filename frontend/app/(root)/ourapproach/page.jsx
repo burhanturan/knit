@@ -33,7 +33,7 @@ const styleButton = {
   backgroundColor: bgColorButton,
   color: fColorButton,
   minWidth: "200px",
-  marginTop: "60px",
+  marginTop: "50px",
 };
 
 const styleFrame = {
@@ -47,6 +47,7 @@ const styleFrameHeader = {
   width: "90%",
   justifyContent: "center",
   fontSize: "1.25em",
+  fontWeight:'bold',
 };
 
 const styleFrameButton = {
@@ -54,6 +55,11 @@ const styleFrameButton = {
   color: fColorFrameButton,
   minWidth: "200px",
   marginTop: "5px",
+};
+
+const stylePageTwo = {
+  fontWeight: 'bold',
+  marginBottom:'15px',
 };
 
 
@@ -174,7 +180,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4>Driven by Users, Loved by Communities</h4>
+              <h5 style={{...stylePageTwo}}>Driven by Users, Loved by Communities</h5>
               <p>
                 Our end-users are the heart of our development process. We
                 listen, we learn, and we deliver solutions that not only meet
@@ -182,7 +188,7 @@ export default function Home() {
                 of code and each user story, we stitch together an experience
                 that resonates and endures.
               </p>
-              <h4>The Agile Advantage</h4>
+              <h5 style={{...stylePageTwo, marginTop:'30px'}}>The Agile Advantage</h5>
               <p>
                 Scrum is our compass in the ever-changing landscape of
                 technology. This framework empowers us to navigate projects with
@@ -194,7 +200,7 @@ export default function Home() {
               <Link
                 href="/whatwedo"
                 className="btn rounded-0"
-                style={{ ...styleButton, marginTop:"185px" }}
+                style={{ ...styleButton }}
               >
                 THE DIFFERENCE WE MAKE
               </Link>

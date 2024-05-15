@@ -53,6 +53,12 @@ const styleHeaderSix = {
   marginBottom: "15px"
 };
 
+const stylePageTwo = {
+  fontSize:'1.25em',
+  fontWeight: 'bold',
+  marginBottom: '20px'
+};
+
 export default function YourChallenges() {
   return (
     <main
@@ -168,10 +174,10 @@ export default function YourChallenges() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h1 style={{fontSize:'1.25em'}} className="fw-bold" >
+              <h1 style={{...stylePageTwo}} >
                 ANALOG TO DIGITAL LEAP
               </h1>
-              <h4 style={{fontSize:'1.125em'}} className="fw-bold" >
+              <h4 style={{fontSize:'1.125em'}} className="fw-bold">
                 Bridging the Digital Divide
               </h4>
               <p style={{fontSize:'1.25em'}} >
@@ -183,7 +189,7 @@ export default function YourChallenges() {
                 our solutions, anticipate a surge in client acquisition and a
                 scalable model poised for expansion.
               </p>
-              <h4 className="fw-bold" style={{fontSize: "1.25em", marginTop: "45px" }}>
+              <h4 style={{...stylePageTwo, marginTop: "45px" }}>
                 PROCESS OPTIMIZATION
               </h4>
               <h5 className="fw-bold">Streamlining for Efficiency</h5>

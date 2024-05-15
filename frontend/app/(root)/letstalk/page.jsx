@@ -9,8 +9,8 @@ const styleButton = {
   marginTop: "13px",
 }
 
-const styleh1 = {
-  fontSize: "2em",
+const styleh4 = {
+  fontSize: "1.15em",
 }
 
 export default function LetsTalk() {
@@ -21,6 +21,7 @@ export default function LetsTalk() {
         fontFamily: "Arial",
         backgroundColor: "#ffffff",
         marginBottom: "0px",
+        color: "#18474D",
       }}
     >
       <div
@@ -50,7 +51,7 @@ export default function LetsTalk() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold" style={{ ...styleh1 }}>
+              <h4 className="fw-bold" style={{ ...styleh4 }}>
                 WE WOULD LOVE TO CONNECT
               </h4>
               <h1 className="fw-bold mb-4" style={{ fontSize: "2.75em" }}>

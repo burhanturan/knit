@@ -52,6 +52,11 @@ const styleButton = {
   marginTop: "50px",
 };
 
+const stylePageTwo = {
+  fontWeight: 'bold',
+  fontSize: '2.75em',
+};
+
 export default function WhatWeDo() {
   return (
     <main style={{ ...styleMain }} >
@@ -166,7 +171,7 @@ export default function WhatWeDo() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h2>Our Mission</h2>
+              <h2 style={{...stylePageTwo}}>Our Mission</h2>
               <h4 style={{fontSize:'1.25em'}} className="fw-bold" >
                 &quot;To weave a digital future where every connection
                 counts&quot;
@@ -178,7 +183,7 @@ export default function WhatWeDo() {
                 here to help communities innovate and thrive.
               </p>
               <br></br>
-              <h2>Our Products</h2>
+              <h2 style={{...stylePageTwo}}>Our Products</h2>
               <p style={{fontSize:'1.25em'}}>
                 Our suite of products embodies our ethos of agility and
                 user-centric design. From sleek, intuitive web applications to
