@@ -38,7 +38,9 @@ const styleFrameHeader = {
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
-  fontSize: "20px",
+  fontSize: "1.25rem",
+  fontWeight: "bold",
+  
 
   color: "#DDE9D3",
 };
@@ -52,9 +54,11 @@ const styleFrameButton = {
 const styleButton = {
   backgroundColor: bgColorButton,
   color: fColorButton,
-  minWidth: "200px",
-  marginTop: "60px",
+  minWidth: "180px",
+  marginTop: "10px",
 };
+
+
 
 
 
@@ -91,13 +95,13 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold fs-16" >
+              <h4 style={{fontSize:'1.1em'}} className="fw-bold" >
                 CONNECTING COMMUNITIES, BUILDING DREAMS
               </h4>
-              <h1 className="fw-bold mb-4 fs-44" >
+              <h1 style={{fontSize:'2.75em'}} className="fw-bold mb-4">
                 Let&apos;s Knit the Future!
               </h1>
-              <p className="fw-bold fs-18" >
+              <p style={{fontSize:'1.125em'}} className="fw-bold fs-18" >
                 Join Us in Weaving a Future Where Technology Unites Us All
               </p>
               <p>
@@ -143,7 +147,7 @@ export default function Home() {
               <p style={{ ...styleFrameHeader }}>
                 Software means investing smartly in technology
                 <br />
-                that drives real, impactful changes.
+                that drives real, impactful change
               </p>
             </div>
 
@@ -182,13 +186,13 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold fs-18" >
+              <h4 style= {{fontSize:"1.2em"}} className="fw-bold" >
                 MAKE YOUR BUSINESS FUTURE-READY
               </h4>
-              <h1 className="fw-bold mb-4 fs-44">
+              <h1 style={{fontSize:'2.75em'}} className="fw-bold mb-4">
                 Digitize to Thrive
               </h1>
-              <h5 className="fw-bold mb-4 fs-18" >
+              <h5 style={{fontSize:'1.125em'}} className="fw-bold mb-4" >
                 Join Us in Weaving a Future Where Technology Unites Us All
               </h5>
               <p>
@@ -210,7 +214,7 @@ export default function Home() {
               </p>
               <Link
                 href="/whatwedo"
-                className="btn rounded-0"
+                className="btn rounded-0 fw-bold"
                 style={{ ...styleButton }}
               >
                 OUR SOLUTIONS

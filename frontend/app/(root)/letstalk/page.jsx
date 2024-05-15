@@ -10,7 +10,7 @@ const styleButton = {
 }
 
 const styleh1 = {
-  fontSize: "16px",
+  fontSize: "2em",
 }
 
 export default function LetsTalk() {
@@ -53,10 +53,10 @@ export default function LetsTalk() {
               <h4 className="fw-bold" style={{ ...styleh1 }}>
                 WE WOULD LOVE TO CONNECT
               </h4>
-              <h1 className="fw-bold mb-4" style={{ fontSize: "44px" }}>
+              <h1 className="fw-bold mb-4" style={{ fontSize: "2.75em" }}>
                 Let&apos;s talk!
               </h1>
-              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
+              <p className="fw-bold" style={{ fontSize: "1.03125em" }}>
                 Bringing ideas to life
               </p>
               <p>
@@ -158,7 +158,7 @@ export default function LetsTalk() {
                 </div>
               </div>
 
-              <p className="fw-bold" style={{ fontSize: "16.5px" }}>
+              <p className="fw-bold" style={{ fontSize: "1.03125em" }}>
                 Join Our Tapestry of Talent
               </p>
               <p>

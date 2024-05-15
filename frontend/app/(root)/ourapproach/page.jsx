@@ -46,7 +46,7 @@ const styleFrameHeader = {
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
-  fontSize: "20px",
+  fontSize: "1.25em",
 };
 
 const styleFrameButton = {
@@ -90,7 +90,7 @@ export default function Home() {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h4 className="fw-bold fs-18">
+              <h4 style={{fontSize:'1.125em'}} className="fw-bold">
                 CRAFTING EXCELLENCE THROUGH COLLABORATION AND AGILITY
               </h4>
               <h1 className="fw-bold">Our Secret Sauce</h1>
