@@ -43,13 +43,13 @@ const styleFrameButton = {
   backgroundColor: bgColorFrameButton,
   color: fColorButton,
   minWidth: "200px",
-  marginTop: "50px",
+  marginTop: "5px",
 };
 
 const styleButton = {
   backgroundColor: bgColorButton,
   color: bgColorFrameButton,
-  marginTop: "60px",
+  marginTop: "50px",
 };
 
 export default function WhatWeDo() {

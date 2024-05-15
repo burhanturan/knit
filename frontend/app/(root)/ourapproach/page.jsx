@@ -42,7 +42,7 @@ const styleFrame = {
 };
 
 const styleFrameHeader = {
-  color: fColorFrameHeader,
+  color: fColorButton,
   display: "inline-flex",
   width: "90%",
   justifyContent: "center",
@@ -50,10 +50,10 @@ const styleFrameHeader = {
 };
 
 const styleFrameButton = {
-  backgroundColor: bgColorFrameButton,
+  backgroundColor: fColorButton,
   color: fColorFrameButton,
   minWidth: "200px",
-  marginTop: "50px",
+  marginTop: "5px",
 };
 
 
