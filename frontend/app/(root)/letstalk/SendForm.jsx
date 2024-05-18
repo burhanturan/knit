@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-export default function ContuctUs() {
+export default function SendForm() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [file, setFile] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ export default function ContuctUs() {
     formData.append("fname", fname);
     formData.append("lname", lname);
     formData.append("email", email);
-    formData.append("message", message);
+    formData.append("file", file);
 
     try {
       const response = await fetch("http://localhost:5600/send-form", {
@@ -31,7 +31,7 @@ export default function ContuctUs() {
   }
 
   return (
-    <form className="needs-validation" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <div className="form-outline mb-4">
         <label className="form-label" htmlFor="fname">
           First Name
@@ -76,7 +76,7 @@ export default function ContuctUs() {
           type="email"
           id="email"
           value={email} 
-          onChange={(e)=>setEmail(e.target.value)}
+          onChange={(e)=>setEmail(e.target.value)} 
           className="form-control"
           placeholder="Email"
           required
@@ -86,28 +86,23 @@ export default function ContuctUs() {
         </div>
       </div>
 
-      <div data-mdb-input-init className="form-outline mb-4">
-        <label className="form-label" htmlFor="message">
-          Message
+      <div className="form-outline mb-4">
+        <label className="form-label" htmlFor="file">
+          Upload Your Resume
         </label>
-        <textarea
+
+        <input
+          type="file"
+          id="file"
+          onChange={(e)=>setFile(e.target.files[0])} 
           className="form-control"
-          id="message"
-          value={message} 
-          onChange={(e)=>setMessage(e.target.value)}
-          rows="4"
-          required
-          placeholder="Enter your message"
-        ></textarea>
-        <div className="invalid-feedback">
-          Please enter your message.
-        </div>
+        />
       </div>
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center mb-4">
         <button
           type="submit"
-          className="btn btn-dark text-white mx-3 rounded-0"
+          className="btn btn-dark w-30 mx-3 rounded-0"
           style={{ width: "110px", height: "40px" }}
         >
           SEND
