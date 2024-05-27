@@ -2,9 +2,9 @@ const express = require("express");
 const multer = require("multer");
 const nodemailer = require("nodemailer");
 
-const serverEmail = REACT_APP_SERVER_USER_EMAIL;
-const serverAppPass = REACT_APP_SERVER_USER_APP_PASS;
-const receiverEmail = REACT_APP_SERVER_RECEIVER_EMAIL;
+serverEmail=process.env.REACT_APP_SERVER_USER_EMAIL;
+serverAppPass=process.env.REACT_APP_SERVER_USER_APP_PASS;
+receiverEmail=process.env.REACT_APP_SERVER_RECEIVER_EMAIL;
 
 const PORT = 5600;
 
