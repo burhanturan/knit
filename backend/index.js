@@ -1,6 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 const nodemailer = require("nodemailer");
+const dotenv = require('dotenv').config();
 
 serverEmail=process.env.REACT_APP_SERVER_USER_EMAIL;
 serverAppPass=process.env.REACT_APP_SERVER_USER_APP_PASS;
