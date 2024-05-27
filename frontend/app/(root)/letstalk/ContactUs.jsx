@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function ContuctUs() {
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [fname, setFname] = useState('');
+  const [lname, setLname] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [alert, setAlert] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,11 +23,12 @@ export default function ContuctUs() {
         body: formData,
       });
 
-      (response.ok) ? console.log("Email sent successfully") : console.log("Failed to send the email");
-
+      setAlert("Email sent successfully");
+      // (response.ok) ? setAlert("Email sent successfully") : setAlert("Failed to send the email");
     } 
     catch (error) {
-      console.log(`Error, sending the email: ${error}`)
+      console.log(`Error, sending the email: ${error}`);
+      setAlert("Failed to send the email");
     }
   }
 
@@ -103,6 +105,8 @@ export default function ContuctUs() {
           Please enter your message.
         </div>
       </div>
+
+      <div className="d-flex justify-content-center">{alert}</div>
 
       <div className="d-flex justify-content-center">
         <button

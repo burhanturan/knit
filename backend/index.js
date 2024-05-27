@@ -2,6 +2,10 @@ const express = require("express");
 const multer = require("multer");
 const nodemailer = require("nodemailer");
 
+const serverEmail = REACT_APP_SERVER_USER_EMAIL;
+const serverAppPass = REACT_APP_SERVER_USER_APP_PASS;
+const receiverEmail = REACT_APP_SERVER_RECEIVER_EMAIL;
+
 const PORT = 5600;
 
 const app = express();
@@ -11,8 +15,8 @@ const upload = multer();
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "memluk@gmail.com",
-    pass: "qmpenecevbfvmaxn",
+    user: serverEmail,
+    pass: serverAppPass,
   }
 });
 
@@ -23,7 +27,7 @@ app.post("/send-form", upload.single("file"), async(req, res) => {
   // prepare the email content
   const mailOptions = {
     from: email,
-    to: ["memlukmurat@yahoo.com", "knitsoftwaremessenger@gmail.com"],
+    to: receiverEmail,
     subject: `${message ? 'New Contact Submission' : 'New Form Upload'}`,
     html: `
       <p>First Name: ${fname}</p>
