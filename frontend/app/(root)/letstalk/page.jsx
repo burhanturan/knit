@@ -1,5 +1,9 @@
+"use client"; // This is a client component
+
 import Image from "next/image"
 import Header from "@/component/common/Header"
+import SendForm from "./SendForm";
+import ContactUs from "./ContactUs";
 
 const styleButton = {
   backgroundColor: "#0c2543",
@@ -81,6 +85,7 @@ export default function LetsTalk() {
                 </button>
 
                 <div className="collapse mb-4" id="collapseContact">
+<<<<<<< HEAD
                   <form className="needs-validation">
                     <div className="form-outline mb-4">
                       <label className="form-label" htmlFor="form4Example1">
@@ -156,6 +161,9 @@ export default function LetsTalk() {
                       </button>
                     </div>
                   </form>
+=======
+                  <ContactUs />
+>>>>>>> develop
                 </div>
               </div>
 
@@ -183,6 +191,7 @@ export default function LetsTalk() {
                 </button>
 
                 <div className="collapse" id="collapseResume">
+<<<<<<< HEAD
                   <form>
                     <div className="form-outline mb-4">
                       <label className="form-label" htmlFor="form4Example1">
@@ -254,6 +263,9 @@ export default function LetsTalk() {
                       </button>
                     </div>
                   </form>
+=======
+                  <SendForm />
+>>>>>>> develop
                 </div>
               </div>
             </div>
@@ -262,4 +274,8 @@ export default function LetsTalk() {
       </section>
     </main>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> develop
